@@ -1,0 +1,32 @@
+# Practices
+
+- [Accept agent output with deterministic checks](verification-quality-security/deterministic-agent-output-validation.md) — use
+- [Aggregate local data outside model context](context-codebase-research/local-analysis-orchestration.md) — use
+- [Apply architecture heuristics contextually](planning-design/contextual-architecture-heuristics.md) — use
+- [Apply code-quality heuristics contextually](implementation-refactoring/contextual-code-quality-heuristics.md) — use
+- [Compress agent responses selectively](efficiency-cost-observability/selective-response-compression.md) — limited
+- [Delegate bounded implementation to an agent](implementation-refactoring/bounded-agent-implementation.md) — use
+- [Delegate only independent subtasks](agent-coordination-automation/independent-subtask-delegation.md) — limited
+- [Explore a codebase with targeted tools](context-codebase-research/targeted-codebase-exploration.md) — use
+- [Explore options before implementation](planning-design/design-options-before-implementation.md) — use
+- [Generate raster assets with explicit acceptance](ui-browser-validation/raster-generation-with-acceptance.md) — limited
+- [Load process skills selectively](agent-coordination-automation/selective-agent-process-skills.md) — limited
+- [Operate external systems safely](agent-coordination-automation/safe-external-system-operations.md) — limited
+- [Optimize credits per accepted task](efficiency-cost-observability/credits-per-accepted-task.md) — limited
+- [Perform manual threat review for agent changes](verification-quality-security/manual-threat-review.md) — use
+- [Pilot design skills without mutation](ui-browser-validation/non-mutating-design-skill-pilots.md) — pilot
+- [Prefer a narrow integration over a full server](agent-coordination-automation/narrow-external-integrations.md) — limited
+- [Prevent secret leakage from agent changes](verification-quality-security/prevent-secret-leaks.md) — use
+- [Reduce terminal output without losing signal](efficiency-cost-observability/terminal-output-reduction.md) — use
+- [Retain only reusable task lessons](knowledge-learning/reusable-task-learning.md) — use
+- [Retrieve version-aware documentation](external-knowledge-docs/version-aware-documentation.md) — use
+- [Review agent changes for overengineering](verification-quality-security/avoid-agent-overengineering.md) — pilot
+- [Separate security evidence gathering from remediation](verification-quality-security/separate-security-evidence-remediation.md) — use
+- [Structure human feedback for the agent](task-human-collaboration/structured-human-feedback.md) — use
+- [Turn long-form knowledge into tested skills](knowledge-learning/long-form-knowledge-to-tested-skill.md) — use
+- [Use design context without replacing the design system](ui-browser-validation/design-context-without-system-replacement.md) — use
+- [Use runtime observability as evidence](verification-quality-security/runtime-observability-evidence.md) — use
+- [Validate security behavior, not scanner presence](verification-quality-security/behavioral-security-validation.md) — use
+- [Validate the rendered UI in a browser](ui-browser-validation/rendered-ui-validation.md) — use
+- [Verify actual remote enforcement](verification-quality-security/verify-remote-enforcement.md) — use
+- [Verify changing claims with primary sources](external-knowledge-docs/primary-source-verification.md) — use

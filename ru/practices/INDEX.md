@@ -1,0 +1,32 @@
+# Практики
+
+- [Агрегировать локальные данные вне контекста модели](context-codebase-research/local-analysis-orchestration.md) — применять
+- [Безопасно выполнять внешние действия](agent-coordination-automation/safe-external-system-operations.md) — ограниченно
+- [Блокировать утечки секретов из агентных изменений](verification-quality-security/prevent-secret-leaks.md) — применять
+- [Выбирать узкую интеграцию вместо полного сервера](agent-coordination-automation/narrow-external-integrations.md) — ограниченно
+- [Генерировать растровые ресурсы с явной приёмкой](ui-browser-validation/raster-generation-with-acceptance.md) — ограниченно
+- [Делегировать только независимые подзадачи](agent-coordination-automation/independent-subtask-delegation.md) — ограниченно
+- [Загружать процессные навыки выборочно](agent-coordination-automation/selective-agent-process-skills.md) — ограниченно
+- [Использовать runtime-наблюдаемость как доказательство](verification-quality-security/runtime-observability-evidence.md) — применять
+- [Испытывать дизайн-навыки без изменений](ui-browser-validation/non-mutating-design-skill-pilots.md) — пилот
+- [Исследовать варианты до реализации](planning-design/design-options-before-implementation.md) — применять
+- [Исследовать кодовую базу целевыми средствами](context-codebase-research/targeted-codebase-exploration.md) — применять
+- [Оптимизировать кредиты на принятую задачу](efficiency-cost-observability/credits-per-accepted-task.md) — ограниченно
+- [Получать дизайн-контекст без замены дизайн-системы](ui-browser-validation/design-context-without-system-replacement.md) — применять
+- [Получать документацию нужной версии](external-knowledge-docs/version-aware-documentation.md) — применять
+- [Поручать агенту ограниченную реализацию](implementation-refactoring/bounded-agent-implementation.md) — применять
+- [Преобразовывать длинные источники в проверяемые навыки](knowledge-learning/long-form-knowledge-to-tested-skill.md) — применять
+- [Применять архитектурные эвристики контекстно](planning-design/contextual-architecture-heuristics.md) — применять
+- [Применять эвристики качества кода контекстно](implementation-refactoring/contextual-code-quality-heuristics.md) — применять
+- [Принимать результат агента детерминированными проверками](verification-quality-security/deterministic-agent-output-validation.md) — применять
+- [Проверять агентные изменения на переусложнение](verification-quality-security/avoid-agent-overengineering.md) — пилот
+- [Проверять изменчивые утверждения по первичным источникам](external-knowledge-docs/primary-source-verification.md) — применять
+- [Проверять отрисованный интерфейс в браузере](ui-browser-validation/rendered-ui-validation.md) — применять
+- [Проверять поведение безопасности, а не наличие сканера](verification-quality-security/behavioral-security-validation.md) — применять
+- [Проверять фактическое удалённое принуждение](verification-quality-security/verify-remote-enforcement.md) — применять
+- [Проводить ручной анализ угроз для агентных изменений](verification-quality-security/manual-threat-review.md) — применять
+- [Разделять сбор security-доказательств и исправление](verification-quality-security/separate-security-evidence-remediation.md) — применять
+- [Сжимать ответы агента выборочно](efficiency-cost-observability/selective-response-compression.md) — ограниченно
+- [Сокращать терминальный вывод без потери сигнала](efficiency-cost-observability/terminal-output-reduction.md) — применять
+- [Сохранять только переиспользуемые выводы задачи](knowledge-learning/reusable-task-learning.md) — применять
+- [Структурировать обратную связь человека агенту](task-human-collaboration/structured-human-feedback.md) — применять

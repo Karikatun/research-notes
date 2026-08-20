@@ -1,0 +1,9 @@
+{
+  "name": "agent-development-research-notes",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "catalog:write": "bun scripts/catalog.mjs --write",
+    "check": "bun scripts/catalog.mjs --check"
+  }
+}

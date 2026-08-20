@@ -10,4 +10,5 @@
 ## Инструменты
 
 - [Compound Engineering](../tools/compound-engineering.md) — отклонить
+- [gstack](../tools/gstack.md) — пилот
 - [learn-from-task](../tools/learn-from-task.md) — применять

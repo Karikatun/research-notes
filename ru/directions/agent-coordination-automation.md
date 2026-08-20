@@ -18,6 +18,7 @@
 - [Bitbucket MCP Server](../tools/bitbucket-mcp.md) — отклонить
 - [Compound Engineering](../tools/compound-engineering.md) — отклонить
 - [GitHub CLI](../tools/github-cli.md) — применять
+- [gstack](../tools/gstack.md) — пилот
 - [OpenCode](../tools/opencode.md) — ограниченно
 - [Superpowers for OpenCode](../tools/superpowers-opencode.md) — пилот
 - [Yandex Cloud CLI](../tools/yandex-cloud-cli.md) — ограниченно

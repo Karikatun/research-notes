@@ -17,6 +17,7 @@
 - [Agentation](../tools/agentation.md) — применять
 - [Chrome DevTools MCP](../tools/chrome-devtools-mcp.md) — применять
 - [Figma MCP](../tools/figma-mcp.md) — пилот
+- [gstack](../tools/gstack.md) — пилот
 - [ImageGen](../tools/imagegen.md) — ограниченно
 - [Impeccable](../tools/impeccable.md) — пилот
 - [Motion / emil-design-eng](../tools/motion-skill.md) — пилот

@@ -21,6 +21,7 @@
 | [Figma MCP](figma-mcp.md) | пилот | проверено |
 | [GitHub CLI](github-cli.md) | применять | результат принят |
 | [Graphify](graphify.md) | не применять | опробовано |
+| [gstack](gstack.md) | пилот | проверено |
 | [ImageGen](imagegen.md) | ограниченно | опробовано |
 | [Impeccable](impeccable.md) | пилот | проверено |
 | [learn-from-task](learn-from-task.md) | применять | результат принят |

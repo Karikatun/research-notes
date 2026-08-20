@@ -16,6 +16,7 @@
 | [Figma MCP](figma-mcp.md) | pilot | verified |
 | [GitHub CLI](github-cli.md) | use | result accepted |
 | [Graphify](graphify.md) | do not use | tried |
+| [gstack](gstack.md) | pilot | verified |
 | [ImageGen](imagegen.md) | limited | tried |
 | [Impeccable](impeccable.md) | pilot | verified |
 | [learn-from-task](learn-from-task.md) | use | result accepted |

@@ -20,6 +20,7 @@ How agent output is accepted through observed behavior and deterministic checks.
 - [appsec-cli](../tools/appsec-cli.md) — use
 - [appsec-fix-recommendations skill](../tools/appsec-fix-recommendations.md) — limited
 - [appsec-triage skill](../tools/appsec-triage.md) — use
+- [gstack](../tools/gstack.md) — pilot
 - [Impeccable](../tools/impeccable.md) — pilot
 - [Manual security review skill](../tools/application-security-review.md) — use
 - [Matt Pocock Engineering Skills](../tools/matt-pocock-engineering-skills.md) — use

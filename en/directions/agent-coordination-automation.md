@@ -17,6 +17,7 @@ How delegation and external systems are used without excess permission surface.
 - [Codex subagents](../tools/codex-subagents.md) — limited
 - [Compound Engineering](../tools/compound-engineering.md) — reject
 - [GitHub CLI](../tools/github-cli.md) — use
+- [gstack](../tools/gstack.md) — pilot
 - [Matt Pocock Engineering Skills](../tools/matt-pocock-engineering-skills.md) — use
 - [OpenCode](../tools/opencode.md) — limited
 - [Superpowers for OpenCode](../tools/superpowers-opencode.md) — pilot

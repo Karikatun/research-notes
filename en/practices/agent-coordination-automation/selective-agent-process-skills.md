@@ -5,7 +5,7 @@ decision: limited-use
 evidence: result-accepted
 primary_direction: agent-coordination-automation
 related_directions: [planning-design, implementation-refactoring, verification-quality-security]
-tools: [matt-pocock-engineering-skills, superpowers-opencode]
+tools: [matt-pocock-engineering-skills, superpowers-opencode, gstack]
 review_state: current
 ---
 
@@ -26,6 +26,8 @@ The skill adds a verifiable signal without unnecessary ceremony or conflicting r
 ## Limitations
 
 Always loading large overlapping suites increases context and can create process conflicts.
+Integrated suites additionally require review for implicit Git, browser,
+network, deploy, and update authority before installation in the primary profile.
 
 ## Revisit
 

@@ -5,7 +5,7 @@ decision: limited-use
 evidence: result-accepted
 primary_direction: agent-coordination-automation
 related_directions: [planning-design, implementation-refactoring, verification-quality-security]
-tools: [matt-pocock-engineering-skills, superpowers-opencode]
+tools: [matt-pocock-engineering-skills, superpowers-opencode, gstack]
 review_state: current
 ---
 
@@ -26,6 +26,8 @@ review_state: current
 ## Ограничения
 
 Постоянная загрузка больших и перекрывающихся наборов увеличивает контекст и может создавать конфликт процессов.
+Интегрированные пакеты дополнительно проверяются на скрытые Git, browser,
+network, deploy и update полномочия до установки в основной профиль.
 
 ## Пересмотр
 

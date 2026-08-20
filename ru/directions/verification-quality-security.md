@@ -24,6 +24,7 @@
 - [Навык sonar-fix-recommendations](../tools/sonar-fix-recommendations.md) — ограниченно
 - [Навык sonar-gather](../tools/sonar-gather.md) — ограниченно
 - [appsec-cli](../tools/appsec-cli.md) — применять
+- [gstack](../tools/gstack.md) — пилот
 - [Impeccable](../tools/impeccable.md) — пилот
 - [Playwright](../tools/playwright.md) — применять
 - [Playwright MCP](../tools/playwright-mcp.md) — не применять

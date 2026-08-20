@@ -17,6 +17,7 @@ How design and real interface states are verified beyond source inspection.
 - [Chrome DevTools MCP](../tools/chrome-devtools-mcp.md) — use
 - [Codex in-app browser](../tools/codex-in-app-browser.md) — use
 - [Figma MCP](../tools/figma-mcp.md) — pilot
+- [gstack](../tools/gstack.md) — pilot
 - [ImageGen](../tools/imagegen.md) — limited
 - [Impeccable](../tools/impeccable.md) — pilot
 - [Motion / emil-design-eng](../tools/motion-skill.md) — pilot

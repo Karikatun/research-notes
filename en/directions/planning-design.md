@@ -13,6 +13,7 @@ How options are explored and proportionate design decisions are made.
 ## Tools
 
 - [Figma MCP](../tools/figma-mcp.md) — pilot
+- [gstack](../tools/gstack.md) — pilot
 - [martin-clean-architecture](../tools/martin-clean-architecture.md) — use
 - [Matt Pocock Engineering Skills](../tools/matt-pocock-engineering-skills.md) — use
 - [Motion / emil-design-eng](../tools/motion-skill.md) — pilot

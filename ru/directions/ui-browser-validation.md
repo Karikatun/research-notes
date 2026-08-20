@@ -22,6 +22,7 @@
 - [Impeccable](../tools/impeccable.md) — пилот
 - [Motion / emil-design-eng](../tools/motion-skill.md) — пилот
 - [Open Design](../tools/open-design.md) — ограниченно
+- [pen.dev](../tools/pen-dev.md) — пилот
 - [Playwright](../tools/playwright.md) — применять
 - [Playwright MCP](../tools/playwright-mcp.md) — не применять
 - [Taste Skill](../tools/taste-skill.md) — ограниченно

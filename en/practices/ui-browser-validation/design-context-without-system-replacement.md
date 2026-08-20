@@ -5,7 +5,7 @@ decision: use
 evidence: result-accepted
 primary_direction: ui-browser-validation
 related_directions: [planning-design]
-tools: [figma-mcp]
+tools: [figma-mcp, pen-dev]
 review_state: current
 ---
 
@@ -26,6 +26,7 @@ Implementation matches supplied context and existing constraints.
 ## Limitations
 
 Design access does not authorize replacing the design system, ignoring asset licenses, or treating a screenshot as the whole contract.
+A repository-local design artifact also requires drift control against code.
 
 ## Revisit
 

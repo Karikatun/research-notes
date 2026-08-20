@@ -18,4 +18,5 @@
 - [martin-clean-architecture](../tools/martin-clean-architecture.md) — применять
 - [Motion / emil-design-eng](../tools/motion-skill.md) — пилот
 - [Open Design](../tools/open-design.md) — ограниченно
+- [pen.dev](../tools/pen-dev.md) — пилот
 - [Taste Skill](../tools/taste-skill.md) — ограниченно

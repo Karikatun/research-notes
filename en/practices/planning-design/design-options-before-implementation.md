@@ -5,7 +5,7 @@ decision: use
 evidence: result-accepted
 primary_direction: planning-design
 related_directions: [ui-browser-validation]
-tools: [open-design, taste-skill]
+tools: [open-design, taste-skill, pen-dev]
 review_state: current
 ---
 
@@ -26,6 +26,8 @@ The selected option is checked against product constraints and accepted by a hum
 ## Limitations
 
 Do not reopen an accepted design system without a new product problem.
+A versioned canvas is not a production contract without human acceptance and
+validation of the implemented interface.
 
 ## Revisit
 

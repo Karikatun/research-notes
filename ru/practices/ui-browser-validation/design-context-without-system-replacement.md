@@ -5,7 +5,7 @@ decision: use
 evidence: result-accepted
 primary_direction: ui-browser-validation
 related_directions: [planning-design]
-tools: [figma-mcp]
+tools: [figma-mcp, pen-dev]
 review_state: current
 ---
 
@@ -26,6 +26,7 @@ review_state: current
 ## Ограничения
 
 Доступ к макету не разрешает менять дизайн-систему, игнорировать лицензию ресурса или считать снимок полным контрактом.
+Repo-local design artifact также требует контроля drift относительно кода.
 
 ## Пересмотр
 

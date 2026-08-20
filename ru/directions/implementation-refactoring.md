@@ -16,4 +16,5 @@
 - [Навык sonar-fix-recommendations](../tools/sonar-fix-recommendations.md) — ограниченно
 - [martin-clean-code](../tools/martin-clean-code.md) — применять
 - [OpenCode](../tools/opencode.md) — ограниченно
+- [pen.dev](../tools/pen-dev.md) — пилот
 - [Ponytail](../tools/ponytail.md) — пилот

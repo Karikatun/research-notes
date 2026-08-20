@@ -18,4 +18,5 @@ How options are explored and proportionate design decisions are made.
 - [Matt Pocock Engineering Skills](../tools/matt-pocock-engineering-skills.md) — use
 - [Motion / emil-design-eng](../tools/motion-skill.md) — pilot
 - [Open Design](../tools/open-design.md) — limited
+- [pen.dev](../tools/pen-dev.md) — pilot
 - [Taste Skill](../tools/taste-skill.md) — limited

@@ -32,6 +32,7 @@
 | [Open Design](open-design.md) | ограниченно | опробовано |
 | [OpenAI Docs MCP](openai-docs-mcp.md) | применять | результат принят |
 | [OpenCode](opencode.md) | ограниченно | опробовано |
+| [pen.dev](pen-dev.md) | пилот | проверено |
 | [Playwright](playwright.md) | применять | результат принят |
 | [Playwright MCP](playwright-mcp.md) | не применять | опробовано |
 | [Ponytail](ponytail.md) | пилот | проверено |

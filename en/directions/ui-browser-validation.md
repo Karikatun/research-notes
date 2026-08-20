@@ -22,6 +22,7 @@ How design and real interface states are verified beyond source inspection.
 - [Impeccable](../tools/impeccable.md) — pilot
 - [Motion / emil-design-eng](../tools/motion-skill.md) — pilot
 - [Open Design](../tools/open-design.md) — limited
+- [pen.dev](../tools/pen-dev.md) — pilot
 - [Playwright](../tools/playwright.md) — use
 - [Playwright MCP](../tools/playwright-mcp.md) — do not use
 - [Taste Skill](../tools/taste-skill.md) — limited

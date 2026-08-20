@@ -5,7 +5,7 @@ decision: use
 evidence: result-accepted
 primary_direction: planning-design
 related_directions: [ui-browser-validation]
-tools: [open-design, taste-skill]
+tools: [open-design, taste-skill, pen-dev]
 review_state: current
 ---
 
@@ -26,6 +26,8 @@ review_state: current
 ## Ограничения
 
 Не применять для переоткрытия уже принятой дизайн-системы без новой продуктовой проблемы.
+Versioned canvas не считается промышленным контрактом без принятия человеком и
+проверки реализованного интерфейса.
 
 ## Пересмотр
 

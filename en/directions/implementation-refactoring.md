@@ -15,5 +15,6 @@ How agent implementation is bounded and code is improved without scope growth.
 - [martin-clean-code](../tools/martin-clean-code.md) — use
 - [Matt Pocock Engineering Skills](../tools/matt-pocock-engineering-skills.md) — use
 - [OpenCode](../tools/opencode.md) — limited
+- [pen.dev](../tools/pen-dev.md) — pilot
 - [Ponytail](../tools/ponytail.md) — pilot
 - [sonar-fix-recommendations skill](../tools/sonar-fix-recommendations.md) — limited

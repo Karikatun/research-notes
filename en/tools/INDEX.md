@@ -29,6 +29,7 @@
 | [Open Design](open-design.md) | limited | tried |
 | [OpenAI Docs MCP](openai-docs-mcp.md) | use | result accepted |
 | [OpenCode](opencode.md) | limited | tried |
+| [pen.dev](pen-dev.md) | pilot | verified |
 | [Playwright](playwright.md) | use | result accepted |
 | [Playwright MCP](playwright-mcp.md) | do not use | tried |
 | [Ponytail](ponytail.md) | pilot | verified |

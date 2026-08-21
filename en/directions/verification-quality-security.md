@@ -20,15 +20,20 @@ How agent output is accepted through observed behavior and deterministic checks.
 - [appsec-cli](../tools/appsec-cli.md) — use
 - [appsec-fix-recommendations skill](../tools/appsec-fix-recommendations.md) — limited
 - [appsec-triage skill](../tools/appsec-triage.md) — use
+- [axe-core](../tools/axe-core.md) — use
+- [Gitleaks](../tools/gitleaks.md) — use
 - [gstack](../tools/gstack.md) — pilot
 - [Impeccable](../tools/impeccable.md) — pilot
 - [Manual security review skill](../tools/application-security-review.md) — use
 - [Matt Pocock Engineering Skills](../tools/matt-pocock-engineering-skills.md) — use
+- [OWASP ZAP](../tools/owasp-zap.md) — limited
 - [Playwright](../tools/playwright.md) — use
 - [Playwright MCP](../tools/playwright-mcp.md) — do not use
 - [Ponytail](../tools/ponytail.md) — pilot
+- [Semgrep](../tools/semgrep.md) — use
 - [Sentry MCP](../tools/sentry-mcp.md) — limited
 - [sonar-cli](../tools/sonar-cli.md) — limited
 - [sonar-fix-recommendations skill](../tools/sonar-fix-recommendations.md) — limited
 - [sonar-gather skill](../tools/sonar-gather.md) — limited
 - [Stryker](../tools/stryker.md) — limited
+- [Trivy](../tools/trivy.md) — use

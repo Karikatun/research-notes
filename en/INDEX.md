@@ -21,7 +21,7 @@ The full [alphabetical tool index](tools/INDEX.md) shows the decision and eviden
 
 ## Require re-evaluation
 
-No cards currently require re-evaluation.
+- Yandex Cloud CLI
 
 ## Additional entry points
 

@@ -8,6 +8,10 @@ primary_direction: planning-design
 related_directions: [ui-browser-validation]
 practices: [design-options-before-implementation, non-mutating-design-skill-pilots]
 measurement: qualitative
+availability: public
+source_access: open-source
+origin: upstream
+official_urls: [https://www.tasteskill.dev/docs]
 review_state: current
 ---
 

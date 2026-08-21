@@ -8,7 +8,11 @@ primary_direction: agent-coordination-automation
 related_directions: [task-human-collaboration]
 practices: [safe-external-system-operations]
 measurement: telemetry
-review_state: current
+availability: account-gated
+source_access: unknown
+origin: upstream
+official_urls: [https://yandex.cloud/en/docs/cli/]
+review_state: recheck
 ---
 
 # Yandex Cloud CLI

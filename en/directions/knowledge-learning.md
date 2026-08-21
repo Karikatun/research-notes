@@ -9,6 +9,7 @@ How reusable lessons are retained without creating dead documentation.
 
 ## Tools
 
+- [book-to-skill](../tools/book-to-skill.md) — pilot
 - [Compound Engineering](../tools/compound-engineering.md) — reject
 - [gstack](../tools/gstack.md) — pilot
 - [learn-from-task](../tools/learn-from-task.md) — use

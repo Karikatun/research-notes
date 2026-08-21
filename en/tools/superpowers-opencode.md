@@ -7,6 +7,10 @@ stages: [installed, configured]
 primary_direction: agent-coordination-automation
 practices: [selective-agent-process-skills]
 measurement: qualitative
+availability: public
+source_access: open-source
+origin: upstream
+official_urls: [https://github.com/obra/superpowers]
 review_state: current
 ---
 

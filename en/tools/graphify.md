@@ -8,6 +8,10 @@ primary_direction: context-codebase-research
 related_directions: [efficiency-cost-observability]
 practices: [targeted-codebase-exploration]
 measurement: quantitative
+availability: public
+source_access: open-source
+origin: upstream
+official_urls: [https://github.com/Graphify-Labs/graphify]
 review_state: current
 ---
 
@@ -62,3 +66,7 @@ false relationships.
 ## Measurement contract
 
 Current calls prove use, not value. A new measurement requires 10–20 identical architecture questions with and without Graphify. Compare accuracy against verified code references, time, tokens, false relationships, and maintenance cost.
+
+## Official materials
+
+- [Repository](https://github.com/Graphify-Labs/graphify)

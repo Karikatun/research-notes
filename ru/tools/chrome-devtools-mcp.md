@@ -8,6 +8,10 @@ primary_direction: ui-browser-validation
 related_directions: [context-codebase-research]
 practices: [rendered-ui-validation, runtime-observability-evidence]
 measurement: telemetry
+availability: public
+source_access: open-source
+origin: upstream
+official_urls: [https://github.com/ChromeDevTools/chrome-devtools-mcp]
 review_state: current
 ---
 

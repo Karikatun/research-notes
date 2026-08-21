@@ -11,5 +11,6 @@
 ## Инструменты
 
 - [Веб-поиск](../tools/web-search.md) — применять
+- [book-to-skill](../tools/book-to-skill.md) — пилот
 - [Context7](../tools/context7.md) — применять
 - [OpenAI Docs MCP](../tools/openai-docs-mcp.md) — применять

@@ -8,6 +8,10 @@ primary_direction: knowledge-learning
 related_directions: [agent-coordination-automation]
 practices: [reusable-task-learning]
 measurement: qualitative
+availability: public
+source_access: source-available
+origin: upstream
+official_urls: [https://github.com/EveryInc/compound-engineering-plugin]
 review_state: current
 ---
 

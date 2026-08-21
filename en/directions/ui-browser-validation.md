@@ -14,6 +14,7 @@ How design and real interface states are verified beyond source inspection.
 ## Tools
 
 - [Agentation](../tools/agentation.md) — use
+- [axe-core](../tools/axe-core.md) — use
 - [Chrome DevTools MCP](../tools/chrome-devtools-mcp.md) — use
 - [Codex in-app browser](../tools/codex-in-app-browser.md) — use
 - [Figma MCP](../tools/figma-mcp.md) — pilot

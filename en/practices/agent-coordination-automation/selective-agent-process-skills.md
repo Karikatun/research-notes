@@ -17,11 +17,16 @@ Activate a specialized process only for a matching task and avoid overlapping in
 
 ## When to apply
 
-When the task clearly matches a specialized skill such as TDD, diagnosis, review, design, or issue work.
+When the task clearly matches a specialized skill such as TDD, diagnosis,
+review, design, or issue work. Before use, verify that the skill is actually
+available in the current runtime and that its output format matches the
+required contract.
 
 ## Success criterion
 
-The skill adds a verifiable signal without unnecessary ceremony or conflicting rules.
+The skill adds a verifiable signal without unnecessary ceremony or conflicting
+rules. When the user requires an exact slug, commit message, or other structure,
+the result receives a deterministic format check.
 
 ## Limitations
 

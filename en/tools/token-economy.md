@@ -7,6 +7,11 @@ stages: [installed, configured, invoked, completed, result-accepted]
 primary_direction: efficiency-cost-observability
 practices: [credits-per-accepted-task]
 measurement: quantitative
+availability: local-only
+source_access: source-available
+origin: custom
+custom_scope: personal
+official_urls: []
 review_state: current
 ---
 

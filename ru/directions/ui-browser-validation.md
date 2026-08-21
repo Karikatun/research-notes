@@ -15,6 +15,7 @@
 
 - [Встроенный браузер Codex](../tools/codex-in-app-browser.md) — применять
 - [Agentation](../tools/agentation.md) — применять
+- [axe-core](../tools/axe-core.md) — применять
 - [Chrome DevTools MCP](../tools/chrome-devtools-mcp.md) — применять
 - [Figma MCP](../tools/figma-mcp.md) — пилот
 - [gstack](../tools/gstack.md) — пилот

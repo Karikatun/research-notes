@@ -8,6 +8,10 @@ primary_direction: direction-slug
 related_directions: []
 practices: [practice-slug]
 measurement: qualitative
+availability: public
+source_access: open-source
+origin: upstream
+official_urls: [https://example.com/]
 review_state: current
 ---
 
@@ -21,6 +25,11 @@ Current decision and concise rationale.
 
 How the tool changes the framing, execution, or verification of a coding-agent
 task.
+
+## Access and origin
+
+Runtime availability, source access, origin, and, for a custom tool, its custom
+scope. Do not conflate public access with an open-source license.
 
 ## Observed use
 

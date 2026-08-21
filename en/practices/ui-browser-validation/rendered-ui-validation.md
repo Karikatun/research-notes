@@ -5,7 +5,7 @@ decision: use
 evidence: result-accepted
 primary_direction: ui-browser-validation
 related_directions: [verification-quality-security]
-tools: [codex-in-app-browser, playwright-mcp, playwright, chrome-devtools-mcp]
+tools: [axe-core, codex-in-app-browser, playwright-mcp, playwright, chrome-devtools-mcp]
 review_state: current
 ---
 
@@ -21,11 +21,16 @@ For user flows, responsiveness, accessibility, signed-in state, network behavior
 
 ## Success criterion
 
-The scenario reproduces in the required state and viewport.
+The scenario reproduces in the required state and viewport. A primary action
+requires its full bounding box to be reachable and unclipped by parent
+containers, not merely partial viewport intersection.
 
 ## Limitations
 
-Interactive exploration does not replace a durable E2E test, and a mock scenario does not prove a live contract.
+Interactive exploration does not replace a durable E2E test, and a mock
+scenario does not prove a live contract. Green E2E, axe, and screenshots are
+not an automatic UX PASS: clarity, hierarchy, and full visibility require
+separate rendered and human acceptance.
 
 ## Revisit
 

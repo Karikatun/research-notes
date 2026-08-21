@@ -8,6 +8,10 @@ primary_direction: verification-quality-security
 related_directions: [ui-browser-validation]
 practices: [deterministic-agent-output-validation, rendered-ui-validation]
 measurement: telemetry
+availability: public
+source_access: open-source
+origin: upstream
+official_urls: [https://github.com/microsoft/playwright]
 review_state: current
 ---
 
@@ -36,6 +40,13 @@ Browser revision mismatches, sandbox permissions, occupied ports, an unstarted
 server, and overlays can cause infrastructure failures. A screenshot does not
 prove behavior, and mock E2E does not prove the production contract.
 
+## Significant attempts
+
+| Scenario | Role | Alternative | Criterion | Outcome | Effect | Rework or harm | Confidence |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Install a browser in CI | Versioned browser runner | Arbitrary version through an external wrapper | Browser revision matches the workspace package | accepted after repair | Switching to pinned Playwright removed the infrastructure failure | The initial wrapper downloaded an incompatible revision | high |
+| Check primary-action visibility | Browser geometry assertion | Partial viewport intersection only | The full bounding box is reachable and not clipped by a container | partial | Human review found a problem missed by automation | The green assertion had to be strengthened | high |
+
 ## Decision
 
 Keep as the primary browser gate. Use isolated ports and databases, and record
@@ -47,4 +58,4 @@ The unit is a completed event for the exact tool or command in available local t
 
 ## Official materials
 
-- [github.com](https://github.com/microsoft/playwright)
+- [Repository](https://github.com/microsoft/playwright)

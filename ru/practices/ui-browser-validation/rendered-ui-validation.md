@@ -5,7 +5,7 @@ decision: use
 evidence: result-accepted
 primary_direction: ui-browser-validation
 related_directions: [verification-quality-security]
-tools: [codex-in-app-browser, playwright-mcp, playwright, chrome-devtools-mcp]
+tools: [axe-core, codex-in-app-browser, playwright-mcp, playwright, chrome-devtools-mcp]
 review_state: current
 ---
 
@@ -21,11 +21,16 @@ review_state: current
 
 ## Критерий успеха
 
-Сценарий воспроизводится в нужном состоянии и области просмотра.
+Сценарий воспроизводится в нужном состоянии и области просмотра. Для основного
+действия проверяется весь bounding box и отсутствие обрезки родительским
+контейнером, а не только частичное попадание во viewport.
 
 ## Ограничения
 
-Интерактивное исследование не заменяет сохраняемый E2E-тест, а mock-сценарий не доказывает живой контракт.
+Интерактивное исследование не заменяет сохраняемый E2E-тест, а mock-сценарий не
+доказывает живой контракт. Зелёные E2E, axe и снимки экрана не являются
+автоматическим UX PASS: понятность, иерархия и полная видимость требуют
+отдельной отрисованной и человеческой приёмки.
 
 ## Пересмотр
 

@@ -7,6 +7,10 @@ stages: [configured, invoked, completed, result-accepted]
 primary_direction: external-knowledge-docs
 practices: [primary-source-verification]
 measurement: telemetry
+availability: account-gated
+source_access: closed-source
+origin: platform
+official_urls: [https://learn.chatgpt.com/docs/glossary]
 review_state: current
 ---
 

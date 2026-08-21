@@ -7,6 +7,11 @@ stages: [installed, configured, invoked, completed, result-accepted]
 primary_direction: verification-quality-security
 practices: [separate-security-evidence-remediation]
 measurement: telemetry
+availability: internal
+source_access: closed-source
+origin: custom
+custom_scope: organization
+official_urls: []
 review_state: current
 ---
 

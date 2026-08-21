@@ -10,6 +10,7 @@ How changing claims and contracts are verified against primary sources.
 
 ## Tools
 
+- [book-to-skill](../tools/book-to-skill.md) — pilot
 - [Context7](../tools/context7.md) — use
 - [OpenAI Docs MCP](../tools/openai-docs-mcp.md) — use
 - [Web search](../tools/web-search.md) — use

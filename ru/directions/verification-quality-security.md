@@ -24,11 +24,16 @@
 - [Навык sonar-fix-recommendations](../tools/sonar-fix-recommendations.md) — ограниченно
 - [Навык sonar-gather](../tools/sonar-gather.md) — ограниченно
 - [appsec-cli](../tools/appsec-cli.md) — применять
+- [axe-core](../tools/axe-core.md) — применять
+- [Gitleaks](../tools/gitleaks.md) — применять
 - [gstack](../tools/gstack.md) — пилот
 - [Impeccable](../tools/impeccable.md) — пилот
+- [OWASP ZAP](../tools/owasp-zap.md) — ограниченно
 - [Playwright](../tools/playwright.md) — применять
 - [Playwright MCP](../tools/playwright-mcp.md) — не применять
 - [Ponytail](../tools/ponytail.md) — пилот
+- [Semgrep](../tools/semgrep.md) — применять
 - [Sentry MCP](../tools/sentry-mcp.md) — ограниченно
 - [sonar-cli](../tools/sonar-cli.md) — ограниченно
 - [Stryker](../tools/stryker.md) — ограниченно
+- [Trivy](../tools/trivy.md) — применять

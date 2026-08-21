@@ -7,6 +7,10 @@ stages: [configured, invoked, completed]
 primary_direction: ui-browser-validation
 practices: [raster-generation-with-acceptance]
 measurement: telemetry
+availability: account-gated
+source_access: closed-source
+origin: platform
+official_urls: [https://developers.openai.com/api/docs/guides/image-generation]
 review_state: current
 ---
 

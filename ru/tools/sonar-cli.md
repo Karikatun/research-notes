@@ -7,6 +7,11 @@ stages: [installed, configured, invoked, completed]
 primary_direction: verification-quality-security
 practices: [separate-security-evidence-remediation]
 measurement: qualitative
+availability: internal
+source_access: source-available
+origin: custom
+custom_scope: project
+official_urls: []
 review_state: current
 ---
 

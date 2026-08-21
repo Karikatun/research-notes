@@ -8,6 +8,10 @@ primary_direction: task-human-collaboration
 related_directions: [ui-browser-validation]
 practices: [structured-human-feedback]
 measurement: qualitative
+availability: public
+source_access: source-available
+origin: upstream
+official_urls: [https://www.agentation.com/, https://github.com/benjitaylor/agentation]
 review_state: current
 ---
 
@@ -39,3 +43,8 @@ review_state: current
 | Сценарий | Роль | Альтернатива | Критерий | Итог | Эффект | Переделка или ущерб | Уверенность |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | Передача дефекта интерфейса | Структурированная обратная связь с состоянием | Свободное текстовое описание | Агент локализует нужное состояние без повторного поиска | принят | Сохранены маршрут, область просмотра и компонент | Отдельная экономия не измерена | средняя |
+
+## Официальные материалы
+
+- [Официальный сайт](https://www.agentation.com/)
+- [Репозиторий с исходным кодом](https://github.com/benjitaylor/agentation)

@@ -8,6 +8,10 @@ primary_direction: implementation-refactoring
 related_directions: [agent-coordination-automation]
 practices: [bounded-agent-implementation, deterministic-agent-output-validation]
 measurement: telemetry
+availability: public
+source_access: open-source
+origin: upstream
+official_urls: [https://github.com/anomalyco/opencode]
 review_state: current
 ---
 
@@ -41,6 +45,10 @@ hardening, 28/28 focused and 79/79 full application tests passed.
 Tool rejection despite exit code zero, schema errors, completion limits,
 truncation cleanup, incompatible dependency upgrades, and lost context between
 retries.
+
+Public OpenCode and an internal model provider connected to it are separate
+entities. Provider success or failure must not be attributed to the upstream
+tool without separate classification.
 
 ## Decision
 

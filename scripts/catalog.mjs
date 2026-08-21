@@ -26,6 +26,10 @@ const allowed = {
   stage: new Set(["documented", "installed", "configured", "invoked", "completed", "result-accepted", "removed"]),
   measurement: new Set(["none", "qualitative", "telemetry", "quantitative"]),
   review: new Set(["current", "recheck"]),
+  availability: new Set(["public", "account-gated", "internal", "local-only"]),
+  sourceAccess: new Set(["open-source", "source-available", "closed-source", "unknown"]),
+  origin: new Set(["upstream", "platform", "custom", "fork"]),
+  customScope: new Set(["personal", "project", "organization"]),
 };
 
 const forbiddenIdentityDigests = new Set([
@@ -44,6 +48,22 @@ const decisionLabels = {
 const evidenceLabels = {
   ru: { claim: "утверждение", verified: "проверено", tried: "опробовано", "result-accepted": "результат принят", measured: "эффект измерен" },
   en: { claim: "claim", verified: "verified", tried: "tried", "result-accepted": "result accepted", measured: "effect measured" },
+};
+const availabilityLabels = {
+  ru: { public: "публичный", "account-gated": "по аккаунту", internal: "внутренний", "local-only": "локальный" },
+  en: { public: "public", "account-gated": "account-gated", internal: "internal", "local-only": "local-only" },
+};
+const sourceAccessLabels = {
+  ru: { "open-source": "открытый", "source-available": "исходники доступны", "closed-source": "закрытый", unknown: "неизвестно" },
+  en: { "open-source": "open source", "source-available": "source available", "closed-source": "closed source", unknown: "unknown" },
+};
+const originLabels = {
+  ru: { upstream: "внешний", platform: "платформенный", custom: "кастомный", fork: "форк" },
+  en: { upstream: "upstream", platform: "platform", custom: "custom", fork: "fork" },
+};
+const customScopeLabels = {
+  ru: { personal: "личный", project: "проектный", organization: "организационный" },
+  en: { personal: "personal", project: "project", organization: "organization" },
 };
 
 async function markdownFiles(dir) {
@@ -149,6 +169,21 @@ function validateDocs(ruDocs, enDocs) {
       for (const dir of m.related_directions ?? []) if (!directionIds.has(dir)) errors.push(`${doc.file}: unknown related direction ${dir}`);
       for (const stage of m.stages ?? []) if (!allowed.stage.has(stage)) errors.push(`${doc.file}: invalid stage ${stage}`);
       if (m.entity === "tool" && !allowed.measurement.has(m.measurement)) errors.push(`${doc.file}: invalid measurement ${m.measurement}`);
+      if (m.entity === "tool") {
+        for (const key of ["availability", "source_access", "origin", "official_urls"]) if (m[key] === undefined || m[key] === "") errors.push(`${doc.file}: missing ${key}`);
+        if (!allowed.availability.has(m.availability)) errors.push(`${doc.file}: invalid availability ${m.availability}`);
+        if (!allowed.sourceAccess.has(m.source_access)) errors.push(`${doc.file}: invalid source_access ${m.source_access}`);
+        if (!allowed.origin.has(m.origin)) errors.push(`${doc.file}: invalid origin ${m.origin}`);
+        if (!Array.isArray(m.official_urls)) errors.push(`${doc.file}: official_urls must be an array`);
+        else {
+          for (const url of m.official_urls) if (!/^https:\/\//.test(url)) errors.push(`${doc.file}: official URL must use https: ${url}`);
+          if (["public", "account-gated"].includes(m.availability) && !m.official_urls.length) errors.push(`${doc.file}: public or account-gated tool lacks official URL`);
+        }
+        if (m.origin === "custom") {
+          if (!allowed.customScope.has(m.custom_scope)) errors.push(`${doc.file}: custom tool lacks valid custom_scope`);
+        } else if (m.custom_scope !== undefined) errors.push(`${doc.file}: non-custom tool must not define custom_scope`);
+        if (m.source_access === "unknown" && m.review_state !== "recheck") errors.push(`${doc.file}: unknown source access requires review_state recheck`);
+      }
       if (m.measurement === "quantitative" && !doc.text.includes(lang === "ru" ? "## Контракт измерения" : "## Measurement contract")) errors.push(`${doc.file}: quantitative metric without contract`);
       if (m.measurement === "telemetry" && !doc.text.includes(lang === "ru" ? "## Контракт телеметрии" : "## Telemetry contract")) errors.push(`${doc.file}: telemetry without contract`);
       if (m.entity === "source" && !String(m.id).match(/^source-[0-9a-f]{8}$/)) errors.push(`${doc.file}: source id is not opaque`);
@@ -250,8 +285,13 @@ function entityIndex(lang, entity, docs) {
   const filtered = docs.filter((doc) => doc.meta.entity === entity).sort((a, b) => a.title.localeCompare(b.title, lang));
   const lines = [`# ${title}`, ""];
   if (entity === "tool") {
-    lines.push(`| ${ru ? "Инструмент" : "Tool"} | ${ru ? "Решение" : "Decision"} | ${ru ? "Доказательства" : "Evidence"} |`, "| --- | --- | --- |");
-    for (const doc of filtered) lines.push(`| [${doc.title}](${markdownLink(rootFile, doc.file)}) | ${decisionLabels[lang][doc.meta.decision]} | ${evidenceLabels[lang][doc.meta.evidence]} |`);
+    lines.push(`| ${ru ? "Инструмент" : "Tool"} | ${ru ? "Доступ" : "Access"} | ${ru ? "Код" : "Source"} | ${ru ? "Происхождение" : "Origin"} | ${ru ? "Материалы" : "Materials"} | ${ru ? "Решение" : "Decision"} | ${ru ? "Доказательства" : "Evidence"} |`, "| --- | --- | --- | --- | --- | --- | --- |");
+    for (const doc of filtered) {
+      const m = doc.meta;
+      const origin = `${originLabels[lang][m.origin]}${m.origin === "custom" ? ` (${customScopeLabels[lang][m.custom_scope]})` : ""}`;
+      const material = m.official_urls.length ? `[${ru ? "официальные" : "official"}](${m.official_urls[0]})` : (ru ? "нет публичной ссылки" : "no public link");
+      lines.push(`| [${doc.title}](${markdownLink(rootFile, doc.file)}) | ${availabilityLabels[lang][m.availability]} | ${sourceAccessLabels[lang][m.source_access]} | ${origin} | ${material} | ${decisionLabels[lang][m.decision]} | ${evidenceLabels[lang][m.evidence]} |`);
+    }
   } else {
     for (const doc of filtered) lines.push(`- [${doc.title}](${markdownLink(rootFile, doc.file)}) — ${decisionLabels[lang][doc.meta.decision]}`);
   }

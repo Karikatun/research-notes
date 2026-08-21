@@ -8,6 +8,10 @@ primary_direction: direction-slug
 related_directions: []
 practices: [practice-slug]
 measurement: qualitative
+availability: public
+source_access: open-source
+origin: upstream
+official_urls: [https://example.com/]
 review_state: current
 ---
 
@@ -20,6 +24,12 @@ review_state: current
 ## Роль в агентной разработке
 
 Как инструмент меняет постановку, выполнение или проверку задачи coding-агента.
+
+## Доступ и происхождение
+
+Публичность использования, доступность исходного кода, происхождение и, для
+кастомного инструмента, область кастомизации. Не смешивать публичный доступ с
+открытой лицензией.
 
 ## Наблюдаемое применение
 

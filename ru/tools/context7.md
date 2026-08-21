@@ -7,6 +7,10 @@ stages: [configured, invoked, completed, result-accepted]
 primary_direction: external-knowledge-docs
 practices: [version-aware-documentation]
 measurement: telemetry
+availability: public
+source_access: open-source
+origin: upstream
+official_urls: [https://github.com/upstash/context7]
 review_state: current
 ---
 

@@ -8,6 +8,11 @@ primary_direction: verification-quality-security
 related_directions: [implementation-refactoring]
 practices: [separate-security-evidence-remediation, deterministic-agent-output-validation]
 measurement: quantitative
+availability: internal
+source_access: source-available
+origin: custom
+custom_scope: project
+official_urls: []
 review_state: current
 ---
 

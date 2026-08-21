@@ -8,6 +8,10 @@ primary_direction: task-human-collaboration
 related_directions: [ui-browser-validation]
 practices: [structured-human-feedback]
 measurement: qualitative
+availability: public
+source_access: source-available
+origin: upstream
+official_urls: [https://www.agentation.com/, https://github.com/benjitaylor/agentation]
 review_state: current
 ---
 
@@ -38,3 +42,8 @@ it only in development and disable it for clean visual acceptance and E2E.
 | Scenario | Role | Alternative | Criterion | Outcome | Effect | Rework or harm | Confidence |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | UI defect handoff | Structured state-aware feedback | Free-form text description | The agent locates the state without repeated discovery | accepted | Route, viewport, and component were retained | Separate savings were not measured | medium |
+
+## Official materials
+
+- [Official site](https://www.agentation.com/)
+- [Source repository](https://github.com/benjitaylor/agentation)

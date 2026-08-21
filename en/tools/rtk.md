@@ -8,6 +8,10 @@ primary_direction: efficiency-cost-observability
 related_directions: [context-codebase-research]
 practices: [terminal-output-reduction]
 measurement: quantitative
+availability: public
+source_access: open-source
+origin: upstream
+official_urls: [https://github.com/rtk-ai/rtk]
 review_state: current
 ---
 
@@ -65,3 +69,7 @@ demonstrated diagnostic-signal loss or increased rework.
 ## Measurement contract
 
 The unit is a command processed by RTK. The denominator is every command in the local RTK database; the effect is the estimated token difference before and after filtering. This is not billing. The quality guard is a rerun or full-output lookup caused by hidden signal. The method is the `rtk gain` aggregate; revisit when its calculation changes or diagnostic loss is demonstrated.
+
+## Official materials
+
+- [Repository](https://github.com/rtk-ai/rtk)

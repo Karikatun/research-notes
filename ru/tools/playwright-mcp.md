@@ -8,6 +8,10 @@ primary_direction: ui-browser-validation
 related_directions: [verification-quality-security]
 practices: [rendered-ui-validation]
 measurement: qualitative
+availability: public
+source_access: open-source
+origin: upstream
+official_urls: [https://github.com/microsoft/playwright-mcp]
 review_state: current
 ---
 

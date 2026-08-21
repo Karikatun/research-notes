@@ -4,6 +4,7 @@ entity: practice
 decision: use
 evidence: result-accepted
 primary_direction: verification-quality-security
+tools: [gitleaks]
 review_state: current
 ---
 

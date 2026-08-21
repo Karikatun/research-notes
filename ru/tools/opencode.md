@@ -8,6 +8,10 @@ primary_direction: implementation-refactoring
 related_directions: [agent-coordination-automation]
 practices: [bounded-agent-implementation, deterministic-agent-output-validation]
 measurement: telemetry
+availability: public
+source_access: open-source
+origin: upstream
+official_urls: [https://github.com/anomalyco/opencode]
 review_state: current
 ---
 
@@ -42,6 +46,10 @@ review_state: current
 Отклонение вызова инструмента при нулевом коде, ошибки схемы, ограничения
 завершения, очистка после обрезанного вывода, несовместимые обновления
 зависимостей и потеря контекста между повторными попытками.
+
+Публичный OpenCode и подключённый к нему внутренний model provider — разные
+сущности. Успех или сбой провайдера нельзя переносить на исходный инструмент
+без отдельной классификации.
 
 ## Решение
 

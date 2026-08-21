@@ -8,6 +8,10 @@ primary_direction: efficiency-cost-observability
 related_directions: [context-codebase-research]
 practices: [terminal-output-reduction]
 measurement: quantitative
+availability: public
+source_access: open-source
+origin: upstream
+official_urls: [https://github.com/rtk-ai/rtk]
 review_state: current
 ---
 
@@ -71,3 +75,7 @@ review_state: current
 ## Контракт измерения
 
 Единица — команда, обработанная RTK. Знаменатель — все команды в локальной базе RTK; эффект — разница оценки токенов до и после фильтрации. Это не биллинг. Защитный показатель качества — повторный запуск или обращение к полному выводу из-за скрытого сигнала. Метод — агрегат `rtk gain`; пересмотр нужен при изменении его расчёта или доказанной потере диагностики.
+
+## Официальные материалы
+
+- [Репозиторий](https://github.com/rtk-ai/rtk)

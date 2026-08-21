@@ -8,6 +8,10 @@ primary_direction: agent-coordination-automation
 related_directions: [task-human-collaboration]
 practices: [safe-external-system-operations, verify-remote-enforcement]
 measurement: telemetry
+availability: public
+source_access: open-source
+origin: upstream
+official_urls: [https://github.com/cli/cli]
 review_state: current
 ---
 

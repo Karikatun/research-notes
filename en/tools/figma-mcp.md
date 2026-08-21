@@ -8,6 +8,10 @@ primary_direction: ui-browser-validation
 related_directions: [planning-design]
 practices: [design-context-without-system-replacement]
 measurement: qualitative
+availability: account-gated
+source_access: closed-source
+origin: upstream
+official_urls: [https://developers.figma.com/docs/figma-mcp-server/]
 review_state: current
 ---
 

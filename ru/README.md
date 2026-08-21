@@ -52,6 +52,22 @@ coding-агентами. Основной вход — проблема или �
 Этапы `installed`, `configured`, `invoked`, `completed`, `result-accepted` и
 `removed` сохраняются отдельно: удаление не стирает историческое доказательство.
 
+## Доступ и происхождение инструментов
+
+- `availability`: `public`, `account-gated`, `internal` или `local-only`;
+- `source_access`: `open-source`, `source-available`, `closed-source` или
+  `unknown`;
+- `origin`: `upstream`, `platform`, `custom` или `fork`;
+- `custom_scope`: `personal`, `project` или `organization`; обязателен только
+  для `origin: custom`;
+- `official_urls` содержит проверенные первичные ссылки. Для публичного или
+  требующего аккаунт инструмента нужна хотя бы одна ссылка.
+
+Публичная доступность не означает открытый исходный код. Для внутреннего или
+локального инструмента пустой `official_urls` явно означает отсутствие
+публичной ссылки. Неподтверждённый доступ к исходникам отмечается `unknown` и
+требует `review_state: recheck`.
+
 ## Актуальность
 
 Календарные даты и периоды не используются. Карточка переводится в

@@ -7,6 +7,11 @@ stages: [installed, configured, invoked, completed, result-accepted]
 primary_direction: verification-quality-security
 practices: [manual-threat-review, behavioral-security-validation]
 measurement: qualitative
+availability: local-only
+source_access: source-available
+origin: custom
+custom_scope: project
+official_urls: []
 review_state: current
 ---
 

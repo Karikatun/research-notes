@@ -8,6 +8,10 @@ primary_direction: agent-coordination-automation
 related_directions: [efficiency-cost-observability]
 practices: [independent-subtask-delegation]
 measurement: telemetry
+availability: account-gated
+source_access: closed-source
+origin: platform
+official_urls: [https://learn.chatgpt.com/docs/agent-configuration/subagents]
 review_state: current
 ---
 
@@ -30,6 +34,16 @@ Context transfer and synthesis may cost more than local work. Use only a bounded
 brief with an independent acceptance check; the primary agent always owns the
 conclusion and quality gates.
 
+## Significant attempt
+
+| Scenario | Role | Alternative | Criterion | Outcome | Effect | Rework or harm | Confidence |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Independent repetitive inventory | Economical subagent with a fixed schema | Work in the primary context | The primary agent verifies a complete structured result | accepted | Noisy extraction stayed outside the primary context | Borderline classifications required another review | high |
+
 ## Telemetry contract
 
 The unit is a completed event for the exact tool or command in available local task logs. The count separates invocation, technical completion, and accepted result; raw logs are not published. Recalculate with the same filter after a new meaningful event set accumulates or the log schema changes.
+
+## Official materials
+
+- [Subagent documentation](https://learn.chatgpt.com/docs/agent-configuration/subagents)

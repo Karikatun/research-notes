@@ -8,6 +8,10 @@ primary_direction: agent-coordination-automation
 related_directions: [planning-design, ui-browser-validation, verification-quality-security, knowledge-learning]
 practices: [selective-agent-process-skills]
 measurement: qualitative
+availability: public
+source_access: source-available
+origin: upstream
+official_urls: [https://github.com/garrytan/gstack]
 review_state: current
 ---
 

@@ -7,6 +7,10 @@ stages: [configured, invoked, completed, result-accepted]
 primary_direction: external-knowledge-docs
 practices: [version-aware-documentation]
 measurement: telemetry
+availability: public
+source_access: closed-source
+origin: platform
+official_urls: [https://developers.openai.com/learn/docs-mcp]
 review_state: current
 ---
 

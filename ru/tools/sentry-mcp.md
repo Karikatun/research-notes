@@ -7,6 +7,10 @@ stages: [installed, configured, invoked, completed, result-accepted]
 primary_direction: verification-quality-security
 practices: [runtime-observability-evidence, separate-security-evidence-remediation]
 measurement: qualitative
+availability: account-gated
+source_access: open-source
+origin: upstream
+official_urls: [https://github.com/getsentry/sentry-mcp]
 review_state: current
 ---
 

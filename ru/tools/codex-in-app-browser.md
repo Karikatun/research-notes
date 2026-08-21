@@ -7,6 +7,10 @@ stages: [configured, invoked, completed, result-accepted]
 primary_direction: ui-browser-validation
 practices: [rendered-ui-validation]
 measurement: qualitative
+availability: account-gated
+source_access: closed-source
+origin: platform
+official_urls: [https://learn.chatgpt.com/docs/browser]
 review_state: current
 ---
 
@@ -28,3 +32,7 @@ review_state: current
 визуальная проверка не заменяет повторяемый тест Playwright. Оставить для
 исследования и ручной проверки, критичные пользовательские сценарии
 автоматизировать отдельно.
+
+## Официальные материалы
+
+- [Документация встроенного браузера](https://learn.chatgpt.com/docs/browser)

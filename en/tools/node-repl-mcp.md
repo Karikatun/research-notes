@@ -8,6 +8,10 @@ primary_direction: context-codebase-research
 related_directions: [efficiency-cost-observability]
 practices: [local-analysis-orchestration]
 measurement: telemetry
+availability: account-gated
+source_access: closed-source
+origin: platform
+official_urls: [https://learn.chatgpt.com/docs/glossary]
 review_state: current
 ---
 

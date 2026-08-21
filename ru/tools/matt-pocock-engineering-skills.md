@@ -8,6 +8,10 @@ primary_direction: agent-coordination-automation
 related_directions: [planning-design, implementation-refactoring, verification-quality-security]
 practices: [selective-agent-process-skills]
 measurement: qualitative
+availability: public
+source_access: open-source
+origin: upstream
+official_urls: [https://github.com/mattpocock/skills]
 review_state: current
 ---
 

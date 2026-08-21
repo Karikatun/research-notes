@@ -7,6 +7,10 @@ stages: [installed, configured, invoked, completed, result-accepted]
 primary_direction: verification-quality-security
 practices: [deterministic-agent-output-validation]
 measurement: quantitative
+availability: public
+source_access: open-source
+origin: upstream
+official_urls: [https://github.com/stryker-mutator/stryker-js]
 review_state: current
 ---
 

@@ -21,7 +21,9 @@ When an agent claims CI, branch protection, permissions, or a remote-platform po
 
 ## Success criterion
 
-The remote platform actually blocks the forbidden action.
+The remote platform actually blocks the forbidden action. After a long local
+gate or publication, fetch again and compare local HEAD with the exact remote
+ref.
 
 ## Limitations
 

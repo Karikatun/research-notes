@@ -8,6 +8,10 @@ primary_direction: planning-design
 related_directions: [ui-browser-validation, implementation-refactoring]
 practices: [design-options-before-implementation, design-context-without-system-replacement]
 measurement: qualitative
+availability: account-gated
+source_access: closed-source
+origin: upstream
+official_urls: [https://pen.dev/]
 review_state: current
 ---
 

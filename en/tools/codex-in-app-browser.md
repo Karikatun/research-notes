@@ -7,6 +7,10 @@ stages: [configured, invoked, completed, result-accepted]
 primary_direction: ui-browser-validation
 practices: [rendered-ui-validation]
 measurement: qualitative
+availability: account-gated
+source_access: closed-source
+origin: platform
+official_urls: [https://learn.chatgpt.com/docs/browser]
 review_state: current
 ---
 
@@ -27,3 +31,7 @@ page must work.”
 Network restrictions and a login wall can block a resource; visual inspection
 does not replace a repeatable Playwright test. Keep it for investigation and
 manual verification, and automate critical journeys separately.
+
+## Official materials
+
+- [Built-in browser documentation](https://learn.chatgpt.com/docs/browser)

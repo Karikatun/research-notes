@@ -8,6 +8,10 @@ primary_direction: verification-quality-security
 related_directions: [ui-browser-validation]
 practices: [deterministic-agent-output-validation, rendered-ui-validation]
 measurement: telemetry
+availability: public
+source_access: open-source
+origin: upstream
+official_urls: [https://github.com/microsoft/playwright]
 review_state: current
 ---
 
@@ -39,6 +43,13 @@ review_state: current
 незапущенный сервер и наложения могут вызывать инфраструктурные падения. Снимок
 экрана не доказывает поведение, а E2E с имитациями — промышленный контракт.
 
+## Значимые попытки
+
+| Сценарий | Роль | Альтернатива | Критерий | Итог | Эффект | Переделка или ущерб | Уверенность |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Установка браузера в CI | Версионированный браузерный раннер | Случайная версия через внешний wrapper | Ревизия браузера совпадает с версией пакета рабочей области | принят после исправления | Переход на закреплённый Playwright устранил инфраструктурный сбой | Первоначальный wrapper загрузил несовместимую ревизию | высокая |
+| Проверка видимости основного действия | Геометрическая браузерная проверка | Только частичное попадание во viewport | Весь bounding box доступен и не обрезан контейнером | частично | Человеческая проверка обнаружила пропущенную автоматикой проблему | Зелёная проверка потребовала усиления утверждения | высокая |
+
 ## Решение
 
 Оставить основной браузерной проверкой. Использовать изолированные порты и базы
@@ -51,4 +62,4 @@ review_state: current
 
 ## Официальные материалы
 
-- [github.com](https://github.com/microsoft/playwright)
+- [Репозиторий](https://github.com/microsoft/playwright)

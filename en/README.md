@@ -53,6 +53,22 @@ The stages `installed`, `configured`, `invoked`, `completed`,
 `result-accepted`, and `removed` remain separate: removal does not erase prior
 evidence.
 
+## Tool access and origin
+
+- `availability`: `public`, `account-gated`, `internal`, or `local-only`;
+- `source_access`: `open-source`, `source-available`, `closed-source`, or
+  `unknown`;
+- `origin`: `upstream`, `platform`, `custom`, or `fork`;
+- `custom_scope`: `personal`, `project`, or `organization`; required only for
+  `origin: custom`;
+- `official_urls` contains verified primary links. A public or account-gated
+  tool requires at least one link.
+
+Public availability does not imply open-source code. An empty `official_urls`
+for an internal or local-only tool explicitly means that no public link is
+available. Unverified source access is `unknown` and requires
+`review_state: recheck`.
+
 ## Freshness
 
 Calendar dates and periods are not used. Set `review_state: recheck` when the

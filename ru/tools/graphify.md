@@ -8,6 +8,10 @@ primary_direction: context-codebase-research
 related_directions: [efficiency-cost-observability]
 practices: [targeted-codebase-exploration]
 measurement: quantitative
+availability: public
+source_access: open-source
+origin: upstream
+official_urls: [https://github.com/Graphify-Labs/graphify]
 review_state: current
 ---
 
@@ -64,3 +68,7 @@ review_state: current
 ## Контракт измерения
 
 Текущие вызовы доказывают использование, но не пользу. Новое измерение требует 10–20 одинаковых архитектурных вопросов с Graphify и без него. Сравниваются точность по проверенным ссылкам на код, время, токены, ложные связи и стоимость сопровождения.
+
+## Официальные материалы
+
+- [Репозиторий](https://github.com/Graphify-Labs/graphify)

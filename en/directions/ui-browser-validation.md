@@ -21,6 +21,7 @@ How design and real interface states are verified beyond source inspection.
 - [gstack](../tools/gstack.md) — pilot
 - [ImageGen](../tools/imagegen.md) — limited
 - [Impeccable](../tools/impeccable.md) — pilot
+- [Lavish AXI](../tools/lavish-axi.md) — pilot
 - [Motion / emil-design-eng](../tools/motion-skill.md) — pilot
 - [Open Design](../tools/open-design.md) — limited
 - [pen.dev](../tools/pen-dev.md) — pilot

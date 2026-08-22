@@ -11,4 +11,5 @@ How humans set boundaries, permissions, and verifiable feedback.
 
 - [Agentation](../tools/agentation.md) — use
 - [GitHub CLI](../tools/github-cli.md) — use
+- [Lavish AXI](../tools/lavish-axi.md) — pilot
 - [Yandex Cloud CLI](../tools/yandex-cloud-cli.md) — limited

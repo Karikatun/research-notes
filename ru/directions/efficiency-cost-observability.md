@@ -16,6 +16,7 @@
 - [Подагенты Codex](../tools/codex-subagents.md) — ограниченно
 - [caveman](../tools/caveman.md) — ограниченно
 - [Graphify](../tools/graphify.md) — не применять
+- [Lavish AXI](../tools/lavish-axi.md) — пилот
 - [Node REPL MCP](../tools/node-repl-mcp.md) — применять
 - [RTK](../tools/rtk.md) — применять
 - [token-economy](../tools/token-economy.md) — ограниченно

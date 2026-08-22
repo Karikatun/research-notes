@@ -21,6 +21,7 @@
 - [gstack](../tools/gstack.md) — пилот
 - [ImageGen](../tools/imagegen.md) — ограниченно
 - [Impeccable](../tools/impeccable.md) — пилот
+- [Lavish AXI](../tools/lavish-axi.md) — пилот
 - [Motion / emil-design-eng](../tools/motion-skill.md) — пилот
 - [Open Design](../tools/open-design.md) — ограниченно
 - [pen.dev](../tools/pen-dev.md) — пилот

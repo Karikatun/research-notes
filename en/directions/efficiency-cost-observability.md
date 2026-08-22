@@ -16,6 +16,7 @@ How accepted-task cost and context reduction are measured without quality loss.
 - [caveman](../tools/caveman.md) — limited
 - [Codex subagents](../tools/codex-subagents.md) — limited
 - [Graphify](../tools/graphify.md) — do not use
+- [Lavish AXI](../tools/lavish-axi.md) — pilot
 - [Node REPL MCP](../tools/node-repl-mcp.md) — use
 - [RTK](../tools/rtk.md) — use
 - [token-economy](../tools/token-economy.md) — limited

@@ -11,4 +11,5 @@
 
 - [Agentation](../tools/agentation.md) — применять
 - [GitHub CLI](../tools/github-cli.md) — применять
+- [Lavish AXI](../tools/lavish-axi.md) — пилот
 - [Yandex Cloud CLI](../tools/yandex-cloud-cli.md) — ограниченно

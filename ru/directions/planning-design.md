@@ -15,6 +15,7 @@
 - [Инженерные навыки Matt Pocock](../tools/matt-pocock-engineering-skills.md) — применять
 - [Figma MCP](../tools/figma-mcp.md) — пилот
 - [gstack](../tools/gstack.md) — пилот
+- [Lavish AXI](../tools/lavish-axi.md) — пилот
 - [martin-clean-architecture](../tools/martin-clean-architecture.md) — применять
 - [Motion / emil-design-eng](../tools/motion-skill.md) — пилот
 - [Open Design](../tools/open-design.md) — ограниченно

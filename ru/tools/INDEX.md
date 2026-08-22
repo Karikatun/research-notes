@@ -27,6 +27,7 @@
 | [gstack](gstack.md) | публичный | исходники доступны | внешний | [официальные](https://github.com/garrytan/gstack) | пилот | проверено |
 | [ImageGen](imagegen.md) | по аккаунту | закрытый | платформенный | [официальные](https://developers.openai.com/api/docs/guides/image-generation) | ограниченно | опробовано |
 | [Impeccable](impeccable.md) | публичный | открытый | внешний | [официальные](https://github.com/pbakaus/impeccable) | пилот | проверено |
+| [Lavish AXI](lavish-axi.md) | публичный | открытый | внешний | [официальные](https://github.com/kunchenguid/lavish-axi) | пилот | проверено |
 | [learn-from-task](learn-from-task.md) | локальный | исходники доступны | кастомный (личный) | нет публичной ссылки | применять | результат принят |
 | [martin-clean-architecture](martin-clean-architecture.md) | локальный | исходники доступны | кастомный (личный) | нет публичной ссылки | применять | результат принят |
 | [martin-clean-code](martin-clean-code.md) | локальный | исходники доступны | кастомный (личный) | нет публичной ссылки | применять | результат принят |

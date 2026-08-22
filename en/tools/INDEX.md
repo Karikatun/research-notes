@@ -22,6 +22,7 @@
 | [gstack](gstack.md) | public | source available | upstream | [official](https://github.com/garrytan/gstack) | pilot | verified |
 | [ImageGen](imagegen.md) | account-gated | closed source | platform | [official](https://developers.openai.com/api/docs/guides/image-generation) | limited | tried |
 | [Impeccable](impeccable.md) | public | open source | upstream | [official](https://github.com/pbakaus/impeccable) | pilot | verified |
+| [Lavish AXI](lavish-axi.md) | public | open source | upstream | [official](https://github.com/kunchenguid/lavish-axi) | pilot | verified |
 | [learn-from-task](learn-from-task.md) | local-only | source available | custom (personal) | no public link | use | result accepted |
 | [Manual security review skill](application-security-review.md) | local-only | source available | custom (project) | no public link | use | result accepted |
 | [martin-clean-architecture](martin-clean-architecture.md) | local-only | source available | custom (personal) | no public link | use | result accepted |

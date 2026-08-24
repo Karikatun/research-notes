@@ -8,9 +8,9 @@
 - [Контекст и исследование кодовой базы](directions/context-codebase-research.md) — 3
 - [Внешние знания и документация](directions/external-knowledge-docs.md) — 3
 - [Планирование и проектирование](directions/planning-design.md) — 7
-- [Реализация и рефакторинг](directions/implementation-refactoring.md) — 4
-- [Проверка результата, тестирование и безопасность](directions/verification-quality-security.md) — 12
-- [Интерфейс и браузерная проверка](directions/ui-browser-validation.md) — 10
+- [Реализация и рефакторинг](directions/implementation-refactoring.md) — 6
+- [Проверка результата, тестирование и безопасность](directions/verification-quality-security.md) — 14
+- [Интерфейс и браузерная проверка](directions/ui-browser-validation.md) — 12
 - [Координация агентов и автоматизация](directions/agent-coordination-automation.md) — 6
 - [Эффективность, стоимость и наблюдаемость](directions/efficiency-cost-observability.md) — 6
 - [Накопление знаний и обучение на задачах](directions/knowledge-learning.md) — 2

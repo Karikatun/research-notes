@@ -6,7 +6,7 @@ evidence: result-accepted
 stages: [installed, configured, invoked, completed, result-accepted]
 primary_direction: verification-quality-security
 related_directions: [ui-browser-validation]
-practices: [controlled-interface-optimization-validation, critical-user-journey-evidence, deterministic-agent-output-validation, rendered-ui-validation]
+practices: [browser-runtime-performance-audit, client-bundle-topology-validation, controlled-interface-optimization-validation, critical-user-journey-evidence, deterministic-agent-output-validation, rendered-ui-validation]
 measurement: telemetry
 availability: public
 source_access: open-source
@@ -49,6 +49,7 @@ review_state: current
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | Установка браузера в CI | Версионированный браузерный раннер | Случайная версия через внешний wrapper | Ревизия браузера совпадает с версией пакета рабочей области | принят после исправления | Переход на закреплённый Playwright устранил инфраструктурный сбой | Первоначальный wrapper загрузил несовместимую ревизию | высокая |
 | Проверка видимости основного действия | Геометрическая браузерная проверка | Только частичное попадание во viewport | Весь bounding box доступен и не обрезан контейнером | частично | Человеческая проверка обнаружила пропущенную автоматикой проблему | Зелёная проверка потребовала усиления утверждения | высокая |
+| Проверка вычисления после переноса в worker | Браузерная проверка выполнения и пользовательский регрессионный сценарий | Только результат сборки без предупреждения | Собранный worker выполняет настоящее вычисление, завершается, а сохранённый сценарий проходит | принят после повторного прогона | Подтвердил выполнение отдельно от структуры пакета | Несвязанный тайм-аут раннего взаимодействия потребовал изоляции и чистого полного повтора | высокая |
 
 ## Решение
 

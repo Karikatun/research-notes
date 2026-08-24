@@ -6,7 +6,7 @@ evidence: result-accepted
 stages: [configured, invoked, completed, result-accepted]
 primary_direction: ui-browser-validation
 related_directions: [context-codebase-research]
-practices: [rendered-ui-validation, runtime-observability-evidence]
+practices: [browser-runtime-performance-audit, client-bundle-topology-validation, rendered-ui-validation, runtime-observability-evidence]
 measurement: telemetry
 availability: public
 source_access: open-source
@@ -31,6 +31,12 @@ review_state: current
 Даёт доказательства из DOM и среды выполнения, сетевые запросы и сведения о
 производительности, которые нельзя получить из статического кода. Полезен для
 диагностики, но не заменяет E2E.
+
+В принятом аудите промышленного интерфейса управляемые сценарии холодной
+загрузки, бездействия, навигации и работы с ограниченными ресурсами отделили
+наблюдаемую загрузку и активность отрисовки от найденного в коде горячего таймера.
+Аудит выявил дефект политики кеширования и избыточную частоту обновления
+состояния, не выдавая непроверенный активный сценарий за измеренный.
 
 ## Ограничения и решение
 

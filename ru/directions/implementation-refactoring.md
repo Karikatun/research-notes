@@ -8,6 +8,8 @@
 - [Поручать агенту ограниченную реализацию](../practices/implementation-refactoring/bounded-agent-implementation.md) — применять
 - [Применять эвристики качества кода контекстно](../practices/implementation-refactoring/contextual-code-quality-heuristics.md) — применять
 - [Проверять агентные изменения на переусложнение](../practices/verification-quality-security/avoid-agent-overengineering.md) — пилот
+- [Проверять топологию загрузки клиентских чанков](../practices/ui-browser-validation/client-bundle-topology-validation.md) — применять
+- [Проводить воспроизводимый аудит производительности интерфейса](../practices/ui-browser-validation/browser-runtime-performance-audit.md) — применять
 
 ## Инструменты
 

@@ -6,7 +6,7 @@ evidence: result-accepted
 stages: [installed, configured, invoked, completed, result-accepted]
 primary_direction: verification-quality-security
 related_directions: [ui-browser-validation]
-practices: [controlled-interface-optimization-validation, critical-user-journey-evidence, deterministic-agent-output-validation, rendered-ui-validation]
+practices: [browser-runtime-performance-audit, client-bundle-topology-validation, controlled-interface-optimization-validation, critical-user-journey-evidence, deterministic-agent-output-validation, rendered-ui-validation]
 measurement: telemetry
 availability: public
 source_access: open-source
@@ -46,6 +46,7 @@ prove behavior, and mock E2E does not prove the production contract.
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | Install a browser in CI | Versioned browser runner | Arbitrary version through an external wrapper | Browser revision matches the workspace package | accepted after repair | Switching to pinned Playwright removed the infrastructure failure | The initial wrapper downloaded an incompatible revision | high |
 | Check primary-action visibility | Browser geometry assertion | Partial viewport intersection only | The full bounding box is reachable and not clipped by a container | partial | Human review found a problem missed by automation | The green assertion had to be strengthened | high |
+| Verify computation after moving it to a worker | Browser execution check plus a user regression flow | Build output without a warning only | The emitted worker performs a real computation, terminates, and the persisted flow passes | accepted after rerun | Confirmed execution separately from bundle structure | An unrelated early-interaction timeout required isolation and a clean full rerun | high |
 
 ## Decision
 

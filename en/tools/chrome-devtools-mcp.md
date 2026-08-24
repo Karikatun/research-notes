@@ -6,7 +6,7 @@ evidence: result-accepted
 stages: [configured, invoked, completed, result-accepted]
 primary_direction: ui-browser-validation
 related_directions: [context-codebase-research]
-practices: [rendered-ui-validation, runtime-observability-evidence]
+practices: [browser-runtime-performance-audit, client-bundle-topology-validation, rendered-ui-validation, runtime-observability-evidence]
 measurement: telemetry
 availability: public
 source_access: open-source
@@ -31,6 +31,12 @@ performance traces.
 Provides DOM/runtime evidence, network requests, and performance insights that
 static code cannot provide. Useful for diagnosis, but not a replacement for
 E2E.
+
+In an accepted production-interface audit, controlled cold, idle, navigation,
+and throttled scenarios separated observed loading and render activity from a
+hot timer found in source. The audit identified a cache-policy defect and
+excessive state-update frequency without presenting an untested active flow as
+measured.
 
 ## Limitations and decision
 

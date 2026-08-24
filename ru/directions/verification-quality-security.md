@@ -13,7 +13,9 @@
 - [Проверять оптимизацию интерфейса сравнением до и после](../practices/ui-browser-validation/controlled-interface-optimization-validation.md) — применять
 - [Проверять отрисованный интерфейс в браузере](../practices/ui-browser-validation/rendered-ui-validation.md) — применять
 - [Проверять поведение безопасности, а не наличие сканера](../practices/verification-quality-security/behavioral-security-validation.md) — применять
+- [Проверять топологию загрузки клиентских чанков](../practices/ui-browser-validation/client-bundle-topology-validation.md) — применять
 - [Проверять фактическое удалённое принуждение](../practices/verification-quality-security/verify-remote-enforcement.md) — применять
+- [Проводить воспроизводимый аудит производительности интерфейса](../practices/ui-browser-validation/browser-runtime-performance-audit.md) — применять
 - [Проводить ручной анализ угроз для агентных изменений](../practices/verification-quality-security/manual-threat-review.md) — применять
 - [Разделять сбор security-доказательств и исправление](../practices/verification-quality-security/separate-security-evidence-remediation.md) — применять
 

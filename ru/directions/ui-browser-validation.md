@@ -12,6 +12,8 @@
 - [Проверять критический пользовательский путь по матрице доказательств](../practices/ui-browser-validation/critical-user-journey-evidence.md) — ограниченно
 - [Проверять оптимизацию интерфейса сравнением до и после](../practices/ui-browser-validation/controlled-interface-optimization-validation.md) — применять
 - [Проверять отрисованный интерфейс в браузере](../practices/ui-browser-validation/rendered-ui-validation.md) — применять
+- [Проверять топологию загрузки клиентских чанков](../practices/ui-browser-validation/client-bundle-topology-validation.md) — применять
+- [Проводить воспроизводимый аудит производительности интерфейса](../practices/ui-browser-validation/browser-runtime-performance-audit.md) — применять
 - [Проводить когнитивный walkthrough отдельно от автоматических UI-проверок](../practices/ui-browser-validation/usability-cognitive-walkthrough.md) — применять
 - [Структурировать обратную связь человека агенту](../practices/task-human-collaboration/structured-human-feedback.md) — применять
 

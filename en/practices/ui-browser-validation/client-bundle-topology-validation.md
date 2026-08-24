@@ -41,8 +41,9 @@ production files.
    exclusive load timings without double-counting, and do not call those totals
    network transfer.
 3. Verify the graph in a browser: open the page in a clean context, record
-   initial requests, perform the target action, and record later requests,
-   worker creation, and the actual computation result.
+   initial requests, perform the target action, and record later requests and the
+   actual result; check worker creation only when a worker is already affected or
+   introduced by the hypothesis.
 4. State one topology-change hypothesis. Do not treat a higher warning threshold
    as a fix; evaluate `manualChunks`, a lazy import, and a worker against different
    expected effects. If only an audit is authorized, stop at the baseline table,
@@ -52,12 +53,13 @@ production files.
    first, then make the smallest change and repeat the clean build with the same
    toolchain and two-axis classifier. Record files that disappeared, appeared,
    moved, or grew separately; do not count moved bytes as a reduction.
-6. Record the worker lifecycle contract before testing: a task-scoped worker must
-   terminate after a result or error, while a long-lived worker must be reused and
-   cleaned up at its defined owner event. Replay the browser scenario and
-   applicable E2E, prove a real computation and the expected lifecycle or mark it
-   `NOT MEASURED`; either exercise error and cancellation or mark them
-   `NOT RUN`/`N/A` explicitly.
+6. If the change introduces or affects a worker, record its lifecycle contract
+   before testing: a task-scoped worker must terminate after a result or error,
+   while a long-lived worker must be reused and cleaned up at its defined owner
+   event. Replay the browser scenario and applicable E2E, prove a real
+   computation and the expected lifecycle or mark it `NOT MEASURED`; either
+   exercise error and cancellation or mark them `NOT RUN`/`N/A` explicitly. For
+   a change without a worker, these checks receive `N/A`.
 7. When claiming a speedup or lower network volume, separately capture comparable
    before/after values for one or more applicable metrics selected in advance:
    latency, INP/TBT, CPU, memory, or a network trace. Without them, leave the
@@ -72,9 +74,9 @@ execution-location labels or `N/A` plus uncompressed and gzip sizes, and
 load-timing totals contain no double-counting. Actual network transfer volume is
 added only when a browser network trace exists; otherwise it receives
 `NOT MEASURED`, and build file sizes do not stand in for it. A browser scenario
-proves execution; conformance to the worker lifecycle contract is also confirmed
-or receives `NOT MEASURED`. E2E protects user behavior. Error and applicable
-cancellation are tested or explicitly marked `NOT RUN`/`N/A`. A vanished warning
+proves execution; conformance to an applicable worker lifecycle contract is also
+confirmed or receives `NOT MEASURED`/`N/A`. E2E protects user behavior. Error and
+applicable cancellation are tested or explicitly marked `NOT RUN`/`N/A`. A vanished warning
 is not called a speedup without latency, INP/TBT, CPU, or memory measurements.
 
 ## Measured observation

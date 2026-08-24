@@ -21,6 +21,23 @@ For a foundational long source that the agent must query selectively across
 recurring engineering decisions. Evaluate a converter as a separate tool first;
 its license does not transfer to the source material.
 
+## How to apply
+
+1. Record the permitted source, access rights, skill objective, and recurring
+   application scenarios; stop before conversion if the rights are unclear.
+2. Build topic navigation and concise paraphrases that retain the provenance of
+   conclusions without copying long passages of protected text.
+3. Define triggers, limitations, counterexamples, and selection rules so the
+   heuristic is not applied automatically to every task.
+4. Test the converter and the resulting skill separately for untrusted
+   instructions, content leakage, and unauthorized actions; access to the source
+   does not authorize installation or project changes.
+5. Run positive retrieval and application tests, negative applicability tests,
+   and a comparison with a solution produced without the skill.
+6. Retain the skill structure, test scenarios, results, limitations, and revisit
+   events; accept it only if it improves the decision without reproducing the
+   source.
+
 ## Success criterion
 
 The skill retrieves the relevant fragment and improves decisions in positive

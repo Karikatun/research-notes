@@ -19,6 +19,21 @@ Provide narrow context and a verifiable result when synthesis costs less than lo
 
 When a subtask is independent, has narrow context, makes no product decisions, and returns a verifiable artifact.
 
+## How to apply
+
+1. State the parent task's question, isolate a part that requires neither shared
+   synthesis nor a product decision, and define its concrete result.
+2. Provide the smallest sufficient context: required inputs, constraints,
+   established facts, and the exact scope of permitted files and actions.
+3. Fix the return contract: the resulting artifact, references to inspected
+   artifacts, checks performed, assumptions, and unresolved questions.
+4. Instruct the delegate to work only within that scope and stop if it discovers
+   a dependency on adjacent work, needs an owner decision, or requires new
+   authority.
+5. Have the parent agent compare decision-bearing claims with the source
+   artifacts, repeat the minimum check, and only then include the result in the
+   shared synthesis.
+
 ## Success criterion
 
 The delegate returns an acceptable result without full repeated research by the parent.

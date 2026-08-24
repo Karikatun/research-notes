@@ -24,6 +24,26 @@ route, starting state, target viewports, and primary observable signal. A local
 fix needs only the affected states; a new or substantially changed critical
 flow needs a complete matrix of applicable states.
 
+## How to apply
+
+1. Freeze the exact build, role, route, session state, test data, viewports,
+   zoom, fonts, primary user signal, and applicable states.
+2. Open the interface in a clean browser context and confirm that the intended
+   build and state are displayed without unexpected console or network failures.
+3. Follow the primary path, then the applicable loading, empty, error, success,
+   disabled, validation, retry, recovery, and long-content states; check desktop
+   and mobile wherever their risks differ.
+4. For every state, check composition, the full bounding box of actions,
+   overflow, keyboard operation, focus, and accessibility; retain screenshots
+   and separate evidence for behavior, network activity, and axe.
+5. Separate the conclusions: rendered review confirms the visible state, E2E
+   confirms transitions, axe checks supported rules, and a cognitive walkthrough
+   provides an expert forecast of clarity. None of them alone gives a usability
+   `PASS`.
+6. In a read-only task, stop at findings and `NOT RUN`/`BLOCKED`. After an
+   authorized fix, repeat the same scenario and automate only the stable
+   contract.
+
 ## Success criterion
 
 The scenario reproduces with realistic data in the required state and

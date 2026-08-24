@@ -25,6 +25,25 @@ different fixtures. For a new flow, variants cover applicable desktop/mobile
 and loading, empty, error, success, disabled, validation, retry, recovery, and
 long-content states.
 
+## How to apply
+
+1. Fix the same scenario, data, actions, constraints, and matrix of applicable
+   desktop/mobile and system states for every option.
+2. Create several materially different throwaway options outside the production
+   UI without turning the first result or a canvas into a second source of truth.
+3. Open each option's actual route, verify that its styles are loaded, and
+   visually walk through states, keyboard and focus behavior, responsive layout,
+   and long content.
+4. Compare the options against predefined product, information architecture,
+   interaction, accessibility, and usability criteria; retain the comparison,
+   observations, and open questions without assigning a final status.
+5. Obtain an explicit decision from the responsible human, then retain the
+   accepted and rejected options; otherwise stop and do not transfer prototype
+   code into the product.
+6. After a separate implementation, validate the production UI against the same
+   matrix and retain rendered evidence and a cognitive walkthrough; the prototype
+   does not prove APIs, persistence, or security.
+
 ## Success criterion
 
 The selected option is checked against product constraints and explicitly

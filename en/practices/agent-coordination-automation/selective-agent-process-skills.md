@@ -22,6 +22,26 @@ review, design, or issue work. Before use, verify that the skill is actually
 available in the current runtime and that its output format matches the
 required contract.
 
+## How to apply
+
+1. Record the task stage, required artifact and format, active constraints, and
+   the verification gap that the skill should close.
+2. Confirm that the skill is available, read its instructions and required
+   references in full, then enumerate the actions and tools it may invoke and
+   the output format it requires.
+3. Reconcile the instructions with user and repository rules, select one
+   minimally sufficient primary skill, and explicitly exclude overlapping
+   processes.
+4. Do not treat loading a skill as authorization to install, connect an account,
+   mutate Git or an external system, deploy, or update; obtain separate authority
+   for actions outside the current boundary.
+5. Run only the part of the protocol relevant to the stage, and retain the
+   activated skill's name, input contract, produced artifact, and results of its
+   prescribed checks.
+6. Validate deterministic format requirements and the task's own checks. End the
+   skill's use after the stage and list skipped, conflicting, or unavailable
+   actions without claiming that they ran.
+
 ## Success criterion
 
 The skill adds a verifiable signal without unnecessary ceremony or conflicting

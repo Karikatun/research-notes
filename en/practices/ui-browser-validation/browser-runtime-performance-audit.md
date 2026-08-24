@@ -49,12 +49,13 @@ smaller matrix.
    an outlier without a rule recorded in advance. Keep raw artifacts in the
    owning project with restricted access and do not attach them to a public card.
    Remove cookies, authorization headers, query values, and user data from any
-   exported excerpt, and publish only an anonymous summary in the public catalog.
+   exported excerpt. Prepare an anonymous candidate summary, and add it to a
+   public catalog only when that update is separately in scope and authorized.
 5. When unnecessary renders are suspected, record the affected component,
    duration, props/state change, and presence or absence of a visible DOM change
-   for every commit. No visible change is a signal to investigate, not automatic
-   proof of a defect. Treat `memo` and `useMemo` as hypotheses until a profile
-   demonstrates their effect.
+   for every React commit. No visible change is a signal to investigate, not
+   automatic proof of a defect. Treat `memo` and `useMemo` as hypotheses until a
+   profile demonstrates their effect.
 6. After the browser measurement, trace the confirmed signal to a request,
    timer, subscription, or code location. Mark findings from static analysis
    alone as inferred; leave an unavailable active scenario `NOT RUN`.
@@ -64,7 +65,7 @@ smaller matrix.
    the same terminal event, recording tail, and maximum wait. Compare only like
    samples and record effect, rework, collateral harm, and remaining `NOT RUN`
    items separately, then run functional, accessibility, and usability checks.
-   Calculate a median or percentiles only with a stated denominator; publish a
+   Calculate a median or percentiles only with a stated denominator; treat a
    single run as a snapshot rather than a budget.
 
 ## Success criterion

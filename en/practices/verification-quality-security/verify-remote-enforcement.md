@@ -19,6 +19,24 @@ Do not infer branch protection or required CI from YAML alone; inspect effective
 
 When an agent claims CI, branch protection, permissions, or a remote-platform policy is enforced.
 
+## How to apply
+
+1. State the claim to verify: which branch, permission, required check, or
+   policy must block which action; freeze the exact remote and ref.
+2. Read the platform's live configuration through a read-only API or interface
+   and retain safe evidence of the effective rules. Treat YAML and local hooks
+   only as configuration sources.
+3. Match the actual status-check names, rule scope, exceptions, permission
+   owners, and current result for the exact commit.
+4. If it is safe and separately authorized, exercise a negative case in an
+   isolated branch or test area. Do not attempt a forbidden push to a working
+   branch merely to obtain evidence.
+5. After a long local gate or publication, fetch again, compare local HEAD with
+   the exact remote ref, and inspect CI for that SHA.
+6. Stop with `BLOCKED` when permissions or plan limitations prevent
+   observation. Changing remote rules, permissions, or branches requires
+   separate authorization.
+
 ## Success criterion
 
 The remote platform actually blocks the forbidden action. After a long local

@@ -32,23 +32,27 @@ retry, recovery, and long-content states.
    identifier or `N/A` before implementation, role, step, state, viewport, input
    method, criterion, expected observation, evidence, status, and linked issue.
 2. Fix the test data, starting URL, session state, and reset method. Reproduce
-   every state through a safe fixture or test API in an isolated environment. An
-   irreversible production action requires separate explicit authorization and
-   a prevalidated limit on affected data; without both, it remains `BLOCKED`.
-   Mark inapplicable rows `N/A` rather than removing them from the denominator.
+   every state through a safe fixture or test API in an isolated environment. Do
+   not perform an irreversible production action merely for verification: without
+   a safe isolated fixture, the row remains `BLOCKED`. A separate production
+   operation requires its own authorization and is not part of this matrix. Mark
+   inapplicable rows `N/A` rather than removing them from the denominator.
 3. Traverse the primary path from the recorded starting state first, then
    reproduce applicable loading, empty, validation, error, retry, recovery,
    disabled-action, and long-content states separately.
-4. Obtain evidence for every row: browser inspection for rendering, geometry,
-   keyboard, and focus; E2E for behavior; and an accessibility scan for its
-   automatable part. One artifact may support multiple rows only when it links
-   explicitly to each row's observation.
+4. Obtain evidence for every executed `PASS` or `FAIL` row: browser inspection
+   for rendering, geometry, keyboard, and focus; E2E for behavior; and an
+   accessibility scan for its automatable part. Retain a reproducible rationale
+   for every `N/A`, `BLOCKED`, or `NOT RUN` status. One artifact may support
+   multiple rows only when it links explicitly to each row's observation.
 5. Assign every `FAIL` an owning layer and a retest method. After an authorized
    fix, replay the affected row, neighboring states, and then the full critical
    journey with the same identifiers.
-6. Publish the completed matrix, totals for every status, and the `NOT RUN` list.
-   If the task was review-only, stop at the report and do not modify the product,
-   tests, or expected screenshots without separate authorization.
+6. Prepare and return the completed matrix, totals for every status, and the
+   `NOT RUN` list in the report. External publication requires separate
+   authorization and sanitized identifiers. If the task was review-only, stop
+   at the report and do not modify the product, tests, or expected screenshots
+   without separate authorization.
 
 ## Success criterion
 

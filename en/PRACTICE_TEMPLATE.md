@@ -19,6 +19,12 @@ Which coding-agent result this practice should improve.
 
 Positive signals, prerequisites, and anonymous scenario types.
 
+## How to apply
+
+An ordered protocol: which inputs and baseline to freeze, which actions to
+perform, which evidence artifacts to retain, how to verify or replay the result,
+and where stopping and authorization boundaries apply.
+
 ## Success criterion
 
 How to accept or reject the practice without relying on impressions.

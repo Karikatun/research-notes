@@ -46,7 +46,7 @@ prove behavior, and mock E2E does not prove the production contract.
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | Install a browser in CI | Versioned browser runner | Arbitrary version through an external wrapper | Browser revision matches the workspace package | accepted after repair | Switching to pinned Playwright removed the infrastructure failure | The initial wrapper downloaded an incompatible revision | high |
 | Check primary-action visibility | Browser geometry assertion | Partial viewport intersection only | The full bounding box is reachable and not clipped by a container | partial | Human review found a problem missed by automation | The green assertion had to be strengthened | high |
-| Verify computation after moving it to a worker | Browser execution check plus a user regression flow | Build output without a warning only | The emitted worker performs a real computation, terminates, and the persisted flow passes | accepted after rerun | Confirmed execution separately from bundle structure | An unrelated early-interaction timeout required isolation and a clean full rerun | high |
+| Verify computation after moving it to a worker | Browser execution check plus a user regression flow | Build output without a warning only | The browser performs a real computation, the persisted flow passes, and the termination call in `finally` is confirmed statically | accepted after rerun | Confirmed execution separately from bundle structure | An unrelated timeout required a clean full rerun; actual worker disappearance remained `NOT MEASURED` | high |
 
 ## Decision
 

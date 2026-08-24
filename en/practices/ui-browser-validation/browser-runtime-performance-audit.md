@@ -26,6 +26,47 @@ A risk-oriented profile usually covers cold load, idle, navigation, a key
 interaction, and one throttled mobile scenario; a local problem can use a
 smaller matrix.
 
+## How to apply
+
+1. Create an attempt manifest: testable question, build and browser identifiers,
+   role, data, route, viewport and DPR, cache mode, network/CPU throttling,
+   scenario matrix, a fixed window duration or observable terminal event with a
+   maximum wait and bounded recording tail, repetition counts, and metrics
+   selected in advance.
+2. For every scenario, choose a primary user-facing metric and causal signals:
+   network requests, long tasks, heap size, React commits, DOM mutations, or
+   state updates. Mark an unavailable scenario `NOT RUN` in advance and a missing
+   measurement in an executed scenario `NOT MEASURED`.
+3. Run every scenario in a reproducible context: cold load in a fresh one, and
+   navigation and interaction from the recorded session state. Start recording
+   before the action and stop by a rule recorded in advance: after a fixed window
+   or an observable terminal event plus a fixed tail. If the event does not occur
+   within the maximum wait, stop the attempt and assign `FAIL`, `BLOCKED`, or
+   `NOT MEASURED` according to the scenario contract.
+4. Without changing the product, retain raw artifacts and a summary row with
+   units for every attempt: a network trace and headers, performance trace, heap
+   snapshot, or React/DOM instrumentation. Do not select the best run or discard
+   an outlier without a rule recorded in advance. Keep raw artifacts in the
+   owning project with restricted access and do not attach them to a public card.
+   Remove cookies, authorization headers, query values, and user data from any
+   exported excerpt, and publish only an anonymous summary in the public catalog.
+5. When unnecessary renders are suspected, record the affected component,
+   duration, props/state change, and presence or absence of a visible DOM change
+   for every commit. No visible change is a signal to investigate, not automatic
+   proof of a defect. Treat `memo` and `useMemo` as hypotheses until a profile
+   demonstrates their effect.
+6. After the browser measurement, trace the confirmed signal to a request,
+   timer, subscription, or code location. Mark findings from static analysis
+   alone as inferred; leave an unavailable active scenario `NOT RUN`.
+7. If the task is audit-only, stop at observations, conclusions, uncertainties,
+   and priorities. After separate authorization for a causal fix, replay the
+   matrix with the same run counts and stopping rule: the same fixed duration or
+   the same terminal event, recording tail, and maximum wait. Compare only like
+   samples and record effect, rework, collateral harm, and remaining `NOT RUN`
+   items separately, then run functional, accessibility, and usability checks.
+   Calculate a median or percentiles only with a stated denominator; publish a
+   single run as a snapshot rather than a budget.
+
 ## Success criterion
 
 Every selected scenario records at least one primary user-facing metric and

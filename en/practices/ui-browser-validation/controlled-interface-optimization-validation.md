@@ -25,6 +25,31 @@ and replay the same scenario. For UI foundation normalization, the baseline
 may include repeated raw values, tokens, and component patterns, but it must be
 supplemented with populated rendered states.
 
+## How to apply
+
+1. State one hypothesis, target user signal, and properties that must not regress.
+   Record non-goals separately so that new information architecture, cosmetic
+   work, and behavior change are not mixed in one attempt.
+2. Before editing, retain baseline evidence for one build version and identical
+   route, state, data, viewport, zoom, and fonts: a rendered screenshot, required
+   geometry, interaction steps, keyboard and focus state, and applicable
+   accessibility results. For UI foundation normalization, retain a separate
+   inventory of repeated values, tokens, and component patterns.
+3. Traverse neighboring loading, empty, error, long-content, disabled-action, and
+   recovery states without changing the product. If the task is audit-only, stop
+   at the baseline evidence, prioritized findings, and solution options.
+4. After separate authorization, change only the stated layer. Change a test or
+   baseline expectation only after separate evidence shows that the measurement,
+   rather than the interface, is defective.
+5. Replay the same scenario with the same data and viewports. Compare the target
+   signal, geometry and overflow, neighboring states, keyboard and focus,
+   accessibility, and behavior of related actions. If the signal does not
+   improve or new harm appears, keep `FAIL` or `INCONCLUSIVE`.
+6. Confirm the visual result with rendered-interface review, behavior with E2E,
+   and clarity with a separate cognitive walkthrough. Retain a before/after
+   bundle with the hypothesis, identical inputs, evidence, rework, collateral
+   harm, and untested states; automate only a durable contract.
+
 ## Success criterion
 
 The same criterion moves from a confirmed problem to `PASS`, and the replay

@@ -5,7 +5,7 @@ decision: use
 evidence: result-accepted
 stages: [configured, invoked, completed, result-accepted]
 primary_direction: ui-browser-validation
-practices: [rendered-ui-validation]
+practices: [controlled-interface-optimization-validation, critical-user-journey-evidence, design-options-before-implementation, rendered-ui-validation, usability-cognitive-walkthrough]
 measurement: qualitative
 availability: account-gated
 source_access: closed-source

@@ -6,7 +6,7 @@ evidence: result-accepted
 stages: [documented, configured, invoked, completed, result-accepted]
 primary_direction: ui-browser-validation
 related_directions: [verification-quality-security]
-practices: [rendered-ui-validation]
+practices: [controlled-interface-optimization-validation, critical-user-journey-evidence, rendered-ui-validation]
 measurement: qualitative
 availability: public
 source_access: open-source

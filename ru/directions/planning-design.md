@@ -9,6 +9,8 @@
 - [Исследовать варианты до реализации](../practices/planning-design/design-options-before-implementation.md) — применять
 - [Получать дизайн-контекст без замены дизайн-системы](../practices/ui-browser-validation/design-context-without-system-replacement.md) — применять
 - [Применять архитектурные эвристики контекстно](../practices/planning-design/contextual-architecture-heuristics.md) — применять
+- [Проверять оптимизацию интерфейса сравнением до и после](../practices/ui-browser-validation/controlled-interface-optimization-validation.md) — применять
+- [Проводить когнитивный walkthrough отдельно от автоматических UI-проверок](../practices/ui-browser-validation/usability-cognitive-walkthrough.md) — применять
 
 ## Инструменты
 

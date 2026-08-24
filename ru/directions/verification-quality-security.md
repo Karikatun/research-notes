@@ -9,6 +9,8 @@
 - [Использовать runtime-наблюдаемость как доказательство](../practices/verification-quality-security/runtime-observability-evidence.md) — применять
 - [Принимать результат агента детерминированными проверками](../practices/verification-quality-security/deterministic-agent-output-validation.md) — применять
 - [Проверять агентные изменения на переусложнение](../practices/verification-quality-security/avoid-agent-overengineering.md) — пилот
+- [Проверять критический пользовательский путь по матрице доказательств](../practices/ui-browser-validation/critical-user-journey-evidence.md) — ограниченно
+- [Проверять оптимизацию интерфейса сравнением до и после](../practices/ui-browser-validation/controlled-interface-optimization-validation.md) — применять
 - [Проверять отрисованный интерфейс в браузере](../practices/ui-browser-validation/rendered-ui-validation.md) — применять
 - [Проверять поведение безопасности, а не наличие сканера](../practices/verification-quality-security/behavioral-security-validation.md) — применять
 - [Проверять фактическое удалённое принуждение](../practices/verification-quality-security/verify-remote-enforcement.md) — применять

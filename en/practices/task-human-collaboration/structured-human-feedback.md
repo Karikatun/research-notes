@@ -4,6 +4,7 @@ entity: practice
 decision: use
 evidence: result-accepted
 primary_direction: task-human-collaboration
+related_directions: [ui-browser-validation]
 tools: [agentation, lavish-axi]
 review_state: current
 ---

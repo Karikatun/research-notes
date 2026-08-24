@@ -11,6 +11,8 @@ How agent output is accepted through observed behavior and deterministic checks.
 - [Review agent changes for overengineering](../practices/verification-quality-security/avoid-agent-overengineering.md) — pilot
 - [Separate security evidence gathering from remediation](../practices/verification-quality-security/separate-security-evidence-remediation.md) — use
 - [Use runtime observability as evidence](../practices/verification-quality-security/runtime-observability-evidence.md) — use
+- [Validate a critical user journey with an evidence matrix](../practices/ui-browser-validation/critical-user-journey-evidence.md) — limited
+- [Validate interface optimization with a comparable before and after](../practices/ui-browser-validation/controlled-interface-optimization-validation.md) — use
 - [Validate security behavior, not scanner presence](../practices/verification-quality-security/behavioral-security-validation.md) — use
 - [Validate the rendered UI in a browser](../practices/ui-browser-validation/rendered-ui-validation.md) — use
 - [Verify actual remote enforcement](../practices/verification-quality-security/verify-remote-enforcement.md) — use

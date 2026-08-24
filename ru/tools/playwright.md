@@ -6,7 +6,7 @@ evidence: result-accepted
 stages: [installed, configured, invoked, completed, result-accepted]
 primary_direction: verification-quality-security
 related_directions: [ui-browser-validation]
-practices: [deterministic-agent-output-validation, rendered-ui-validation]
+practices: [controlled-interface-optimization-validation, critical-user-journey-evidence, deterministic-agent-output-validation, rendered-ui-validation]
 measurement: telemetry
 availability: public
 source_access: open-source

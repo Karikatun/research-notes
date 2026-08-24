@@ -21,9 +21,12 @@
 - [Принимать результат агента детерминированными проверками](verification-quality-security/deterministic-agent-output-validation.md) — применять
 - [Проверять агентные изменения на переусложнение](verification-quality-security/avoid-agent-overengineering.md) — пилот
 - [Проверять изменчивые утверждения по первичным источникам](external-knowledge-docs/primary-source-verification.md) — применять
+- [Проверять критический пользовательский путь по матрице доказательств](ui-browser-validation/critical-user-journey-evidence.md) — ограниченно
+- [Проверять оптимизацию интерфейса сравнением до и после](ui-browser-validation/controlled-interface-optimization-validation.md) — применять
 - [Проверять отрисованный интерфейс в браузере](ui-browser-validation/rendered-ui-validation.md) — применять
 - [Проверять поведение безопасности, а не наличие сканера](verification-quality-security/behavioral-security-validation.md) — применять
 - [Проверять фактическое удалённое принуждение](verification-quality-security/verify-remote-enforcement.md) — применять
+- [Проводить когнитивный walkthrough отдельно от автоматических UI-проверок](ui-browser-validation/usability-cognitive-walkthrough.md) — применять
 - [Проводить ручной анализ угроз для агентных изменений](verification-quality-security/manual-threat-review.md) — применять
 - [Разделять сбор security-доказательств и исправление](verification-quality-security/separate-security-evidence-remediation.md) — применять
 - [Сжимать ответы агента выборочно](efficiency-cost-observability/selective-response-compression.md) — ограниченно

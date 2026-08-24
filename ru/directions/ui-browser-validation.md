@@ -9,7 +9,11 @@
 - [Испытывать дизайн-навыки без изменений](../practices/ui-browser-validation/non-mutating-design-skill-pilots.md) — пилот
 - [Исследовать варианты до реализации](../practices/planning-design/design-options-before-implementation.md) — применять
 - [Получать дизайн-контекст без замены дизайн-системы](../practices/ui-browser-validation/design-context-without-system-replacement.md) — применять
+- [Проверять критический пользовательский путь по матрице доказательств](../practices/ui-browser-validation/critical-user-journey-evidence.md) — ограниченно
+- [Проверять оптимизацию интерфейса сравнением до и после](../practices/ui-browser-validation/controlled-interface-optimization-validation.md) — применять
 - [Проверять отрисованный интерфейс в браузере](../practices/ui-browser-validation/rendered-ui-validation.md) — применять
+- [Проводить когнитивный walkthrough отдельно от автоматических UI-проверок](../practices/ui-browser-validation/usability-cognitive-walkthrough.md) — применять
+- [Структурировать обратную связь человека агенту](../practices/task-human-collaboration/structured-human-feedback.md) — применять
 
 ## Инструменты
 

@@ -36,7 +36,6 @@
 | [Open Design](open-design.md) | публичный | открытый | внешний | [официальные](https://github.com/nexu-io/open-design) | ограниченно | опробовано |
 | [OpenAI Docs MCP](openai-docs-mcp.md) | публичный | закрытый | платформенный | [официальные](https://developers.openai.com/learn/docs-mcp) | применять | результат принят |
 | [OpenCode](opencode.md) | публичный | открытый | внешний | [официальные](https://github.com/anomalyco/opencode) | ограниченно | опробовано |
-| [OWASP ZAP](owasp-zap.md) | публичный | открытый | внешний | [официальные](https://www.zaproxy.org/) | ограниченно | проверено |
 | [pen.dev](pen-dev.md) | по аккаунту | закрытый | внешний | [официальные](https://pen.dev/) | пилот | проверено |
 | [Playwright](playwright.md) | публичный | открытый | внешний | [официальные](https://github.com/microsoft/playwright) | применять | результат принят |
 | [Playwright MCP](playwright-mcp.md) | публичный | открытый | внешний | [официальные](https://github.com/microsoft/playwright-mcp) | не применять | опробовано |
@@ -51,3 +50,4 @@
 | [token-economy](token-economy.md) | локальный | исходники доступны | кастомный (личный) | нет публичной ссылки | ограниченно | результат принят |
 | [Trivy](trivy.md) | публичный | открытый | внешний | [официальные](https://trivy.dev/docs/latest/target/repository/) | применять | результат принят |
 | [Yandex Cloud CLI](yandex-cloud-cli.md) | по аккаунту | неизвестно | внешний | [официальные](https://yandex.cloud/en/docs/cli/) | ограниченно | результат принят |
+| [ZAP](owasp-zap.md) | публичный | открытый | внешний | [официальные](https://www.zaproxy.org/) | ограниченно | проверено |

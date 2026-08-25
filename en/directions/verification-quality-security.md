@@ -30,7 +30,6 @@ How agent output is accepted through observed behavior and deterministic checks.
 - [Impeccable](../tools/impeccable.md) — pilot
 - [Manual security review skill](../tools/application-security-review.md) — use
 - [Matt Pocock Engineering Skills](../tools/matt-pocock-engineering-skills.md) — use
-- [OWASP ZAP](../tools/owasp-zap.md) — limited
 - [Playwright](../tools/playwright.md) — use
 - [Playwright MCP](../tools/playwright-mcp.md) — do not use
 - [Ponytail](../tools/ponytail.md) — pilot
@@ -41,3 +40,4 @@ How agent output is accepted through observed behavior and deterministic checks.
 - [sonar-gather skill](../tools/sonar-gather.md) — limited
 - [Stryker](../tools/stryker.md) — limited
 - [Trivy](../tools/trivy.md) — use
+- [ZAP](../tools/owasp-zap.md) — limited

@@ -32,7 +32,6 @@
 - [Gitleaks](../tools/gitleaks.md) — применять
 - [gstack](../tools/gstack.md) — пилот
 - [Impeccable](../tools/impeccable.md) — пилот
-- [OWASP ZAP](../tools/owasp-zap.md) — ограниченно
 - [Playwright](../tools/playwright.md) — применять
 - [Playwright MCP](../tools/playwright-mcp.md) — не применять
 - [Ponytail](../tools/ponytail.md) — пилот
@@ -41,3 +40,4 @@
 - [sonar-cli](../tools/sonar-cli.md) — ограниченно
 - [Stryker](../tools/stryker.md) — ограниченно
 - [Trivy](../tools/trivy.md) — применять
+- [ZAP](../tools/owasp-zap.md) — ограниченно

@@ -33,7 +33,6 @@
 | [Open Design](open-design.md) | public | open source | upstream | [official](https://github.com/nexu-io/open-design) | limited | tried |
 | [OpenAI Docs MCP](openai-docs-mcp.md) | public | closed source | platform | [official](https://developers.openai.com/learn/docs-mcp) | use | result accepted |
 | [OpenCode](opencode.md) | public | open source | upstream | [official](https://github.com/anomalyco/opencode) | limited | tried |
-| [OWASP ZAP](owasp-zap.md) | public | open source | upstream | [official](https://www.zaproxy.org/) | limited | verified |
 | [pen.dev](pen-dev.md) | account-gated | closed source | upstream | [official](https://pen.dev/) | pilot | verified |
 | [Playwright](playwright.md) | public | open source | upstream | [official](https://github.com/microsoft/playwright) | use | result accepted |
 | [Playwright MCP](playwright-mcp.md) | public | open source | upstream | [official](https://github.com/microsoft/playwright-mcp) | do not use | tried |
@@ -51,3 +50,4 @@
 | [Trivy](trivy.md) | public | open source | upstream | [official](https://trivy.dev/docs/latest/target/repository/) | use | result accepted |
 | [Web search](web-search.md) | account-gated | closed source | platform | [official](https://learn.chatgpt.com/docs/glossary) | use | result accepted |
 | [Yandex Cloud CLI](yandex-cloud-cli.md) | account-gated | unknown | upstream | [official](https://yandex.cloud/en/docs/cli/) | limited | result accepted |
+| [ZAP](owasp-zap.md) | public | open source | upstream | [official](https://www.zaproxy.org/) | limited | verified |

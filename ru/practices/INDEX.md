@@ -12,6 +12,7 @@
 - [Исследовать варианты до реализации](planning-design/design-options-before-implementation.md) — применять
 - [Исследовать кодовую базу целевыми средствами](context-codebase-research/targeted-codebase-exploration.md) — применять
 - [Оптимизировать кредиты на принятую задачу](efficiency-cost-observability/credits-per-accepted-task.md) — ограниченно
+- [Оценивать навыки агента по доказательствам отдельных задач](knowledge-learning/task-evidence-skill-evaluation.md) — пилот
 - [Получать дизайн-контекст без замены дизайн-системы](ui-browser-validation/design-context-without-system-replacement.md) — применять
 - [Получать документацию нужной версии](external-knowledge-docs/version-aware-documentation.md) — применять
 - [Поручать агенту ограниченную реализацию](implementation-refactoring/bounded-agent-implementation.md) — применять
@@ -27,6 +28,7 @@
 - [Проверять поведение безопасности, а не наличие сканера](verification-quality-security/behavioral-security-validation.md) — применять
 - [Проверять топологию загрузки клиентских чанков](ui-browser-validation/client-bundle-topology-validation.md) — применять
 - [Проверять фактическое удалённое принуждение](verification-quality-security/verify-remote-enforcement.md) — применять
+- [Проверять целостность project skills перед применением](verification-quality-security/verify-agent-skill-bundle-integrity.md) — ограниченно
 - [Проводить воспроизводимый аудит производительности интерфейса](ui-browser-validation/browser-runtime-performance-audit.md) — применять
 - [Проводить когнитивный walkthrough отдельно от автоматических UI-проверок](ui-browser-validation/usability-cognitive-walkthrough.md) — применять
 - [Проводить ручной анализ угроз для агентных изменений](verification-quality-security/manual-threat-review.md) — применять

@@ -5,6 +5,7 @@ How agent output is accepted through observed behavior and deterministic checks.
 ## Practices
 
 - [Accept agent output with deterministic checks](../practices/verification-quality-security/deterministic-agent-output-validation.md) — use
+- [Evaluate agent skills from task-level evidence](../practices/knowledge-learning/task-evidence-skill-evaluation.md) — pilot
 - [Load process skills selectively](../practices/agent-coordination-automation/selective-agent-process-skills.md) — limited
 - [Perform manual threat review for agent changes](../practices/verification-quality-security/manual-threat-review.md) — use
 - [Prevent secret leakage from agent changes](../practices/verification-quality-security/prevent-secret-leaks.md) — use
@@ -18,6 +19,7 @@ How agent output is accepted through observed behavior and deterministic checks.
 - [Validate security behavior, not scanner presence](../practices/verification-quality-security/behavioral-security-validation.md) — use
 - [Validate the rendered UI in a browser](../practices/ui-browser-validation/rendered-ui-validation.md) — use
 - [Verify actual remote enforcement](../practices/verification-quality-security/verify-remote-enforcement.md) — use
+- [Verify project-skill bundle integrity before use](../practices/verification-quality-security/verify-agent-skill-bundle-integrity.md) — limited
 
 ## Tools
 
@@ -33,8 +35,10 @@ How agent output is accepted through observed behavior and deterministic checks.
 - [Playwright](../tools/playwright.md) — use
 - [Playwright MCP](../tools/playwright-mcp.md) — do not use
 - [Ponytail](../tools/ponytail.md) — pilot
+- [Project skill bundle integrity verifier](../tools/project-skill-bundle-verifier.md) — pilot
 - [Semgrep](../tools/semgrep.md) — use
 - [Sentry MCP](../tools/sentry-mcp.md) — limited
+- [skill-doctor](../tools/skill-doctor.md) — pilot
 - [sonar-cli](../tools/sonar-cli.md) — limited
 - [sonar-fix-recommendations skill](../tools/sonar-fix-recommendations.md) — limited
 - [sonar-gather skill](../tools/sonar-gather.md) — limited

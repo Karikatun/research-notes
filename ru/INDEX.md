@@ -9,11 +9,11 @@
 - [Внешние знания и документация](directions/external-knowledge-docs.md) — 3
 - [Планирование и проектирование](directions/planning-design.md) — 7
 - [Реализация и рефакторинг](directions/implementation-refactoring.md) — 6
-- [Проверка результата, тестирование и безопасность](directions/verification-quality-security.md) — 14
+- [Проверка результата, тестирование и безопасность](directions/verification-quality-security.md) — 16
 - [Интерфейс и браузерная проверка](directions/ui-browser-validation.md) — 12
-- [Координация агентов и автоматизация](directions/agent-coordination-automation.md) — 6
-- [Эффективность, стоимость и наблюдаемость](directions/efficiency-cost-observability.md) — 6
-- [Накопление знаний и обучение на задачах](directions/knowledge-learning.md) — 2
+- [Координация агентов и автоматизация](directions/agent-coordination-automation.md) — 8
+- [Эффективность, стоимость и наблюдаемость](directions/efficiency-cost-observability.md) — 7
+- [Накопление знаний и обучение на задачах](directions/knowledge-learning.md) — 3
 
 ## Инструменты
 

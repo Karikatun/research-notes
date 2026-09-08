@@ -11,6 +11,7 @@
 | [Навык sonar-fix-recommendations](sonar-fix-recommendations.md) | внутренний | исходники доступны | кастомный (проектный) | нет публичной ссылки | ограниченно | опробовано |
 | [Навык sonar-gather](sonar-gather.md) | внутренний | исходники доступны | кастомный (проектный) | нет публичной ссылки | ограниченно | опробовано |
 | [Подагенты Codex](codex-subagents.md) | по аккаунту | закрытый | платформенный | [официальные](https://learn.chatgpt.com/docs/agent-configuration/subagents) | ограниченно | результат принят |
+| [Проверка целостности project skill bundles](project-skill-bundle-verifier.md) | локальный | исходники доступны | кастомный (проектный) | нет публичной ссылки | пилот | проверено |
 | [Agentation](agentation.md) | публичный | исходники доступны | внешний | [официальные](https://www.agentation.com/) | применять | результат принят |
 | [appsec-cli](appsec-cli.md) | внутренний | закрытый | кастомный (организационный) | нет публичной ссылки | применять | результат принят |
 | [axe-core](axe-core.md) | публичный | открытый | внешний | [официальные](https://github.com/dequelabs/axe-core) | применять | результат принят |
@@ -43,6 +44,7 @@
 | [RTK](rtk.md) | публичный | открытый | внешний | [официальные](https://github.com/rtk-ai/rtk) | применять | эффект измерен |
 | [Semgrep](semgrep.md) | публичный | открытый | внешний | [официальные](https://docs.semgrep.dev/category/local-and-cli-scans) | применять | результат принят |
 | [Sentry MCP](sentry-mcp.md) | по аккаунту | открытый | внешний | [официальные](https://github.com/getsentry/sentry-mcp) | ограниченно | результат принят |
+| [skill-doctor](skill-doctor.md) | локальный | исходники доступны | кастомный (проектный) | нет публичной ссылки | пилот | проверено |
 | [sonar-cli](sonar-cli.md) | внутренний | исходники доступны | кастомный (проектный) | нет публичной ссылки | ограниченно | опробовано |
 | [Stryker](stryker.md) | публичный | открытый | внешний | [официальные](https://github.com/stryker-mutator/stryker-js) | ограниченно | эффект измерен |
 | [Superpowers for OpenCode](superpowers-opencode.md) | публичный | открытый | внешний | [официальные](https://github.com/obra/superpowers) | пилот | проверено |

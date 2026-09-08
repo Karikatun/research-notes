@@ -7,6 +7,7 @@
 - [Compress agent responses selectively](efficiency-cost-observability/selective-response-compression.md) — limited
 - [Delegate bounded implementation to an agent](implementation-refactoring/bounded-agent-implementation.md) — use
 - [Delegate only independent subtasks](agent-coordination-automation/independent-subtask-delegation.md) — limited
+- [Evaluate agent skills from task-level evidence](knowledge-learning/task-evidence-skill-evaluation.md) — pilot
 - [Explore a codebase with targeted tools](context-codebase-research/targeted-codebase-exploration.md) — use
 - [Explore options before implementation](planning-design/design-options-before-implementation.md) — use
 - [Generate raster assets with explicit acceptance](ui-browser-validation/raster-generation-with-acceptance.md) — limited
@@ -35,3 +36,4 @@
 - [Validate the rendered UI in a browser](ui-browser-validation/rendered-ui-validation.md) — use
 - [Verify actual remote enforcement](verification-quality-security/verify-remote-enforcement.md) — use
 - [Verify changing claims with primary sources](external-knowledge-docs/primary-source-verification.md) — use
+- [Verify project-skill bundle integrity before use](verification-quality-security/verify-agent-skill-bundle-integrity.md) — limited

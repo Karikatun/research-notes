@@ -7,6 +7,7 @@ How accepted-task cost and context reduction are measured without quality loss.
 - [Aggregate local data outside model context](../practices/context-codebase-research/local-analysis-orchestration.md) — use
 - [Compress agent responses selectively](../practices/efficiency-cost-observability/selective-response-compression.md) — limited
 - [Delegate only independent subtasks](../practices/agent-coordination-automation/independent-subtask-delegation.md) — limited
+- [Evaluate agent skills from task-level evidence](../practices/knowledge-learning/task-evidence-skill-evaluation.md) — pilot
 - [Explore a codebase with targeted tools](../practices/context-codebase-research/targeted-codebase-exploration.md) — use
 - [Optimize credits per accepted task](../practices/efficiency-cost-observability/credits-per-accepted-task.md) — limited
 - [Reduce terminal output without losing signal](../practices/efficiency-cost-observability/terminal-output-reduction.md) — use
@@ -19,4 +20,5 @@ How accepted-task cost and context reduction are measured without quality loss.
 - [Lavish AXI](../tools/lavish-axi.md) — pilot
 - [Node REPL MCP](../tools/node-repl-mcp.md) — use
 - [RTK](../tools/rtk.md) — use
+- [skill-doctor](../tools/skill-doctor.md) — pilot
 - [token-economy](../tools/token-economy.md) — limited

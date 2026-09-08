@@ -6,10 +6,12 @@ How delegation and external systems are used without excess permission surface.
 
 - [Delegate bounded implementation to an agent](../practices/implementation-refactoring/bounded-agent-implementation.md) — use
 - [Delegate only independent subtasks](../practices/agent-coordination-automation/independent-subtask-delegation.md) — limited
+- [Evaluate agent skills from task-level evidence](../practices/knowledge-learning/task-evidence-skill-evaluation.md) — pilot
 - [Load process skills selectively](../practices/agent-coordination-automation/selective-agent-process-skills.md) — limited
 - [Operate external systems safely](../practices/agent-coordination-automation/safe-external-system-operations.md) — limited
 - [Prefer a narrow integration over a full server](../practices/agent-coordination-automation/narrow-external-integrations.md) — limited
 - [Verify actual remote enforcement](../practices/verification-quality-security/verify-remote-enforcement.md) — use
+- [Verify project-skill bundle integrity before use](../practices/verification-quality-security/verify-agent-skill-bundle-integrity.md) — limited
 
 ## Tools
 
@@ -20,5 +22,7 @@ How delegation and external systems are used without excess permission surface.
 - [gstack](../tools/gstack.md) — pilot
 - [Matt Pocock Engineering Skills](../tools/matt-pocock-engineering-skills.md) — use
 - [OpenCode](../tools/opencode.md) — limited
+- [Project skill bundle integrity verifier](../tools/project-skill-bundle-verifier.md) — pilot
+- [skill-doctor](../tools/skill-doctor.md) — pilot
 - [Superpowers for OpenCode](../tools/superpowers-opencode.md) — pilot
 - [Yandex Cloud CLI](../tools/yandex-cloud-cli.md) — limited

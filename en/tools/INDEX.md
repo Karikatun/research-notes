@@ -37,9 +37,11 @@
 | [Playwright](playwright.md) | public | open source | upstream | [official](https://github.com/microsoft/playwright) | use | result accepted |
 | [Playwright MCP](playwright-mcp.md) | public | open source | upstream | [official](https://github.com/microsoft/playwright-mcp) | do not use | tried |
 | [Ponytail](ponytail.md) | public | open source | upstream | [official](https://github.com/DietrichGebert/ponytail) | pilot | verified |
+| [Project skill bundle integrity verifier](project-skill-bundle-verifier.md) | local-only | source available | custom (project) | no public link | pilot | verified |
 | [RTK](rtk.md) | public | open source | upstream | [official](https://github.com/rtk-ai/rtk) | use | effect measured |
 | [Semgrep](semgrep.md) | public | open source | upstream | [official](https://docs.semgrep.dev/category/local-and-cli-scans) | use | result accepted |
 | [Sentry MCP](sentry-mcp.md) | account-gated | open source | upstream | [official](https://github.com/getsentry/sentry-mcp) | limited | result accepted |
+| [skill-doctor](skill-doctor.md) | local-only | source available | custom (project) | no public link | pilot | verified |
 | [sonar-cli](sonar-cli.md) | internal | source available | custom (project) | no public link | limited | tried |
 | [sonar-fix-recommendations skill](sonar-fix-recommendations.md) | internal | source available | custom (project) | no public link | limited | tried |
 | [sonar-gather skill](sonar-gather.md) | internal | source available | custom (project) | no public link | limited | tried |

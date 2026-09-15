@@ -5,6 +5,7 @@
 ## Практики
 
 - [Генерировать растровые ресурсы с явной приёмкой](../practices/ui-browser-validation/raster-generation-with-acceptance.md) — ограниченно
+- [Защищать визуальные эталоны версионируемым утверждением](../practices/ui-browser-validation/versioned-visual-approval-gates.md) — ограниченно
 - [Использовать runtime-наблюдаемость как доказательство](../practices/verification-quality-security/runtime-observability-evidence.md) — применять
 - [Испытывать дизайн-навыки без изменений](../practices/ui-browser-validation/non-mutating-design-skill-pilots.md) — пилот
 - [Исследовать варианты до реализации](../practices/planning-design/design-options-before-implementation.md) — применять
@@ -33,4 +34,5 @@
 - [pen.dev](../tools/pen-dev.md) — пилот
 - [Playwright](../tools/playwright.md) — применять
 - [Playwright MCP](../tools/playwright-mcp.md) — не применять
+- [Project UI-contract gate](../tools/project-ui-contract-gate.md) — ограниченно
 - [Taste Skill](../tools/taste-skill.md) — ограниченно

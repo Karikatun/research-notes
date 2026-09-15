@@ -6,6 +6,7 @@
 
 - [Блокировать утечки секретов из агентных изменений](../practices/verification-quality-security/prevent-secret-leaks.md) — применять
 - [Загружать процессные навыки выборочно](../practices/agent-coordination-automation/selective-agent-process-skills.md) — ограниченно
+- [Защищать визуальные эталоны версионируемым утверждением](../practices/ui-browser-validation/versioned-visual-approval-gates.md) — ограниченно
 - [Использовать runtime-наблюдаемость как доказательство](../practices/verification-quality-security/runtime-observability-evidence.md) — применять
 - [Оценивать навыки агента по доказательствам отдельных задач](../practices/knowledge-learning/task-evidence-skill-evaluation.md) — пилот
 - [Принимать результат агента детерминированными проверками](../practices/verification-quality-security/deterministic-agent-output-validation.md) — применять
@@ -38,6 +39,7 @@
 - [Playwright](../tools/playwright.md) — применять
 - [Playwright MCP](../tools/playwright-mcp.md) — не применять
 - [Ponytail](../tools/ponytail.md) — пилот
+- [Project UI-contract gate](../tools/project-ui-contract-gate.md) — ограниченно
 - [Semgrep](../tools/semgrep.md) — применять
 - [Sentry MCP](../tools/sentry-mcp.md) — ограниченно
 - [skill-doctor](../tools/skill-doctor.md) — пилот

@@ -7,6 +7,7 @@ How design and real interface states are verified beyond source inspection.
 - [Explore options before implementation](../practices/planning-design/design-options-before-implementation.md) — use
 - [Generate raster assets with explicit acceptance](../practices/ui-browser-validation/raster-generation-with-acceptance.md) — limited
 - [Pilot design skills without mutation](../practices/ui-browser-validation/non-mutating-design-skill-pilots.md) — pilot
+- [Protect visual baselines with versioned approval](../practices/ui-browser-validation/versioned-visual-approval-gates.md) — limited
 - [Run a cognitive walkthrough separately from automated UI checks](../practices/ui-browser-validation/usability-cognitive-walkthrough.md) — use
 - [Run a reproducible browser UI performance audit](../practices/ui-browser-validation/browser-runtime-performance-audit.md) — use
 - [Structure human feedback for the agent](../practices/task-human-collaboration/structured-human-feedback.md) — use
@@ -33,4 +34,5 @@ How design and real interface states are verified beyond source inspection.
 - [pen.dev](../tools/pen-dev.md) — pilot
 - [Playwright](../tools/playwright.md) — use
 - [Playwright MCP](../tools/playwright-mcp.md) — do not use
+- [Project UI-contract gate](../tools/project-ui-contract-gate.md) — limited
 - [Taste Skill](../tools/taste-skill.md) — limited

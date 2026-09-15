@@ -6,7 +6,7 @@ evidence: result-accepted
 stages: [installed, configured, invoked, completed, result-accepted]
 primary_direction: verification-quality-security
 related_directions: [ui-browser-validation]
-practices: [browser-runtime-performance-audit, client-bundle-topology-validation, controlled-interface-optimization-validation, critical-user-journey-evidence, deterministic-agent-output-validation, rendered-ui-validation]
+practices: [browser-runtime-performance-audit, client-bundle-topology-validation, controlled-interface-optimization-validation, critical-user-journey-evidence, deterministic-agent-output-validation, rendered-ui-validation, versioned-visual-approval-gates]
 measurement: telemetry
 availability: public
 source_access: open-source
@@ -47,6 +47,7 @@ prove behavior, and mock E2E does not prove the production contract.
 | Install a browser in CI | Versioned browser runner | Arbitrary version through an external wrapper | Browser revision matches the workspace package | accepted after repair | Switching to pinned Playwright removed the infrastructure failure | The initial wrapper downloaded an incompatible revision | high |
 | Check primary-action visibility | Browser geometry assertion | Partial viewport intersection only | The full bounding box is reachable and not clipped by a container | partial | Human review found a problem missed by automation | The green assertion had to be strengthened | high |
 | Verify computation after moving it to a worker | Browser execution check plus a user regression flow | Build output without a warning only | The browser performs a real computation, the persisted flow passes, and the termination call in `finally` is confirmed statically | accepted after rerun | Confirmed execution separately from bundle structure | An unrelated timeout required a clean full rerun; actual worker disappearance remained `NOT MEASURED` | high |
+| Protect an approved visual state | Pinned browser inside a project gate | Manual screenshots or ordinary snapshot updates | The exact staged source produces zero diff, and the baseline cannot change without separate approval | accepted | Approved desktop/mobile scenarios gained a reproducible oracle while unspecified states remained blocked | Source-ownership policy and approval history added substantial maintenance; development-speed impact was not measured | high |
 
 ## Decision
 

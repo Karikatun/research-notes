@@ -5,7 +5,7 @@ decision: use
 evidence: result-accepted
 primary_direction: context-codebase-research
 related_directions: [efficiency-cost-observability]
-tools: [graphify]
+tools: [graft, graphify]
 review_state: current
 ---
 
@@ -31,8 +31,10 @@ For a concrete ownership, data-flow, or module-boundary question in an unfamilia
    from hypotheses.
 4. Name the remaining gap explicitly. Build a bounded index or graph at the
    recorded revision only for that gap, and retain its build and query
-   parameters; installation, hooks, and persistent artifacts require separate
-   authorization.
+   parameters. Before a comparative run, separately verify that the runtime
+   loads in the agreed safe environment and that the producer and validator
+   agree on early termination; installation, hooks, and persistent artifacts
+   require separate authorization.
 5. Check the index or graph answer against source code, tests, and reverse
    search. Record stale data, false relationships, and areas the tool does not
    cover separately.
@@ -43,10 +45,16 @@ For a concrete ownership, data-flow, or module-boundary question in an unfamilia
 ## Success criterion
 
 The answer is accurate, reproducible, and obtained with lower maintenance cost.
+If the graph cannot be built in the pre-agreed environment or the report loses
+evidence of an early failure, reject the pilot without assigning a fictitious
+accuracy score or drawing an A/B conclusion.
 
 ## Limitations
 
-A persistent graph is unnecessary when targeted search, owning-path inspection, and tests already answer the question.
+A persistent graph is unnecessary when targeted search, owning-path inspection,
+and tests already answer the question. A native dependency of an unused
+language parser can stop the runtime before graph construction; do not expand
+the installation boundary in the middle of a pilot.
 
 ## Revisit
 

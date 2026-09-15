@@ -6,7 +6,7 @@ evidence: result-accepted
 stages: [installed, configured, invoked, completed, result-accepted]
 primary_direction: verification-quality-security
 related_directions: [ui-browser-validation]
-practices: [browser-runtime-performance-audit, client-bundle-topology-validation, controlled-interface-optimization-validation, critical-user-journey-evidence, deterministic-agent-output-validation, rendered-ui-validation]
+practices: [browser-runtime-performance-audit, client-bundle-topology-validation, controlled-interface-optimization-validation, critical-user-journey-evidence, deterministic-agent-output-validation, rendered-ui-validation, versioned-visual-approval-gates]
 measurement: telemetry
 availability: public
 source_access: open-source
@@ -50,6 +50,7 @@ review_state: current
 | Установка браузера в CI | Версионированный браузерный раннер | Случайная версия через внешний wrapper | Ревизия браузера совпадает с версией пакета рабочей области | принят после исправления | Переход на закреплённый Playwright устранил инфраструктурный сбой | Первоначальный wrapper загрузил несовместимую ревизию | высокая |
 | Проверка видимости основного действия | Геометрическая браузерная проверка | Только частичное попадание во viewport | Весь bounding box доступен и не обрезан контейнером | частично | Человеческая проверка обнаружила пропущенную автоматикой проблему | Зелёная проверка потребовала усиления утверждения | высокая |
 | Проверка вычисления после переноса в worker | Браузерная проверка выполнения и пользовательский регрессионный сценарий | Только результат сборки без предупреждения | Браузер выполняет настоящее вычисление, сохранённый сценарий проходит, а вызов завершения в `finally` подтверждён статически | принят после повторного прогона | Подтвердил выполнение отдельно от структуры пакета | Несвязанный тайм-аут потребовал чистого полного повтора; фактическое исчезновение worker осталось `NOT MEASURED` | высокая |
+| Защита утверждённого визуального состояния | Закреплённый браузер внутри project gate | Ручные снимки или обычное обновление snapshot | Точный staged source даёт нулевой diff, а baseline нельзя обновить без отдельного утверждения | принят | Утверждённые desktop/mobile-сценарии получили воспроизводимый oracle, непрописанные состояния остались заблокированы | Контракт владения source и история утверждений заметно увеличили сопровождение; влияние на скорость разработки не измерялось | высокая |
 
 ## Решение
 

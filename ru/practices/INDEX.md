@@ -7,6 +7,7 @@
 - [Генерировать растровые ресурсы с явной приёмкой](ui-browser-validation/raster-generation-with-acceptance.md) — ограниченно
 - [Делегировать только независимые подзадачи](agent-coordination-automation/independent-subtask-delegation.md) — ограниченно
 - [Загружать процессные навыки выборочно](agent-coordination-automation/selective-agent-process-skills.md) — ограниченно
+- [Защищать визуальные эталоны версионируемым утверждением](ui-browser-validation/versioned-visual-approval-gates.md) — ограниченно
 - [Использовать runtime-наблюдаемость как доказательство](verification-quality-security/runtime-observability-evidence.md) — применять
 - [Испытывать дизайн-навыки без изменений](ui-browser-validation/non-mutating-design-skill-pilots.md) — пилот
 - [Исследовать варианты до реализации](planning-design/design-options-before-implementation.md) — применять

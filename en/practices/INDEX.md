@@ -18,6 +18,7 @@
 - [Pilot design skills without mutation](ui-browser-validation/non-mutating-design-skill-pilots.md) — pilot
 - [Prefer a narrow integration over a full server](agent-coordination-automation/narrow-external-integrations.md) — limited
 - [Prevent secret leakage from agent changes](verification-quality-security/prevent-secret-leaks.md) — use
+- [Protect visual baselines with versioned approval](ui-browser-validation/versioned-visual-approval-gates.md) — limited
 - [Reduce terminal output without losing signal](efficiency-cost-observability/terminal-output-reduction.md) — use
 - [Retain only reusable task lessons](knowledge-learning/reusable-task-learning.md) — use
 - [Retrieve version-aware documentation](external-knowledge-docs/version-aware-documentation.md) — use

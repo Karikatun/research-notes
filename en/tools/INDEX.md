@@ -18,6 +18,7 @@
 | [Figma MCP](figma-mcp.md) | account-gated | closed source | upstream | [official](https://developers.figma.com/docs/figma-mcp-server/) | pilot | verified |
 | [GitHub CLI](github-cli.md) | public | open source | upstream | [official](https://github.com/cli/cli) | use | result accepted |
 | [Gitleaks](gitleaks.md) | public | open source | upstream | [official](https://github.com/gitleaks/gitleaks) | use | result accepted |
+| [Graft](graft.md) | public | open source | upstream | [official](https://github.com/trailhq/Graft) | reject | tried |
 | [Graphify](graphify.md) | public | open source | upstream | [official](https://github.com/Graphify-Labs/graphify) | do not use | tried |
 | [gstack](gstack.md) | public | source available | upstream | [official](https://github.com/garrytan/gstack) | pilot | verified |
 | [ImageGen](imagegen.md) | account-gated | closed source | platform | [official](https://developers.openai.com/api/docs/guides/image-generation) | limited | tried |
@@ -38,6 +39,7 @@
 | [Playwright MCP](playwright-mcp.md) | public | open source | upstream | [official](https://github.com/microsoft/playwright-mcp) | do not use | tried |
 | [Ponytail](ponytail.md) | public | open source | upstream | [official](https://github.com/DietrichGebert/ponytail) | pilot | verified |
 | [Project skill bundle integrity verifier](project-skill-bundle-verifier.md) | local-only | source available | custom (project) | no public link | pilot | verified |
+| [Project UI-contract gate](project-ui-contract-gate.md) | local-only | source available | custom (project) | no public link | limited | result accepted |
 | [RTK](rtk.md) | public | open source | upstream | [official](https://github.com/rtk-ai/rtk) | use | effect measured |
 | [Semgrep](semgrep.md) | public | open source | upstream | [official](https://docs.semgrep.dev/category/local-and-cli-scans) | use | result accepted |
 | [Sentry MCP](sentry-mcp.md) | account-gated | open source | upstream | [official](https://github.com/getsentry/sentry-mcp) | limited | result accepted |

@@ -24,6 +24,7 @@
 | [Figma MCP](figma-mcp.md) | по аккаунту | закрытый | внешний | [официальные](https://developers.figma.com/docs/figma-mcp-server/) | пилот | проверено |
 | [GitHub CLI](github-cli.md) | публичный | открытый | внешний | [официальные](https://github.com/cli/cli) | применять | результат принят |
 | [Gitleaks](gitleaks.md) | публичный | открытый | внешний | [официальные](https://github.com/gitleaks/gitleaks) | применять | результат принят |
+| [Graft](graft.md) | публичный | открытый | внешний | [официальные](https://github.com/trailhq/Graft) | отклонить | опробовано |
 | [Graphify](graphify.md) | публичный | открытый | внешний | [официальные](https://github.com/Graphify-Labs/graphify) | не применять | опробовано |
 | [gstack](gstack.md) | публичный | исходники доступны | внешний | [официальные](https://github.com/garrytan/gstack) | пилот | проверено |
 | [ImageGen](imagegen.md) | по аккаунту | закрытый | платформенный | [официальные](https://developers.openai.com/api/docs/guides/image-generation) | ограниченно | опробовано |
@@ -41,6 +42,7 @@
 | [Playwright](playwright.md) | публичный | открытый | внешний | [официальные](https://github.com/microsoft/playwright) | применять | результат принят |
 | [Playwright MCP](playwright-mcp.md) | публичный | открытый | внешний | [официальные](https://github.com/microsoft/playwright-mcp) | не применять | опробовано |
 | [Ponytail](ponytail.md) | публичный | открытый | внешний | [официальные](https://github.com/DietrichGebert/ponytail) | пилот | проверено |
+| [Project UI-contract gate](project-ui-contract-gate.md) | локальный | исходники доступны | кастомный (проектный) | нет публичной ссылки | ограниченно | результат принят |
 | [RTK](rtk.md) | публичный | открытый | внешний | [официальные](https://github.com/rtk-ai/rtk) | применять | эффект измерен |
 | [Semgrep](semgrep.md) | публичный | открытый | внешний | [официальные](https://docs.semgrep.dev/category/local-and-cli-scans) | применять | результат принят |
 | [Sentry MCP](sentry-mcp.md) | по аккаунту | открытый | внешний | [официальные](https://github.com/getsentry/sentry-mcp) | ограниченно | результат принят |

@@ -11,6 +11,7 @@
 ## Инструменты
 
 - [Chrome DevTools MCP](../tools/chrome-devtools-mcp.md) — применять
+- [Graft](../tools/graft.md) — отклонить
 - [Graphify](../tools/graphify.md) — не применять
 - [Node REPL MCP](../tools/node-repl-mcp.md) — применять
 - [RTK](../tools/rtk.md) — применять

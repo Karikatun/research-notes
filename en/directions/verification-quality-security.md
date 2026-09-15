@@ -9,6 +9,7 @@ How agent output is accepted through observed behavior and deterministic checks.
 - [Load process skills selectively](../practices/agent-coordination-automation/selective-agent-process-skills.md) — limited
 - [Perform manual threat review for agent changes](../practices/verification-quality-security/manual-threat-review.md) — use
 - [Prevent secret leakage from agent changes](../practices/verification-quality-security/prevent-secret-leaks.md) — use
+- [Protect visual baselines with versioned approval](../practices/ui-browser-validation/versioned-visual-approval-gates.md) — limited
 - [Review agent changes for overengineering](../practices/verification-quality-security/avoid-agent-overengineering.md) — pilot
 - [Run a reproducible browser UI performance audit](../practices/ui-browser-validation/browser-runtime-performance-audit.md) — use
 - [Separate security evidence gathering from remediation](../practices/verification-quality-security/separate-security-evidence-remediation.md) — use
@@ -36,6 +37,7 @@ How agent output is accepted through observed behavior and deterministic checks.
 - [Playwright MCP](../tools/playwright-mcp.md) — do not use
 - [Ponytail](../tools/ponytail.md) — pilot
 - [Project skill bundle integrity verifier](../tools/project-skill-bundle-verifier.md) — pilot
+- [Project UI-contract gate](../tools/project-ui-contract-gate.md) — limited
 - [Semgrep](../tools/semgrep.md) — use
 - [Sentry MCP](../tools/sentry-mcp.md) — limited
 - [skill-doctor](../tools/skill-doctor.md) — pilot

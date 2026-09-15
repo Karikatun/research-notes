@@ -11,6 +11,7 @@ How agents obtain sufficient context without unnecessary indexing and noise.
 ## Tools
 
 - [Chrome DevTools MCP](../tools/chrome-devtools-mcp.md) — use
+- [Graft](../tools/graft.md) — reject
 - [Graphify](../tools/graphify.md) — do not use
 - [Node REPL MCP](../tools/node-repl-mcp.md) — use
 - [RTK](../tools/rtk.md) — use

@@ -12,27 +12,42 @@ review_state: current
 
 ## Desired outcome
 
-Do not treat the agent's self-report as evidence; run relevant tests, builds, and analyzers.
+Do not treat the agent's self-report as evidence; run relevant tests, builds,
+and analyzers. For structured output, leave semantic choices to the agent and
+derive safe mechanical fields deterministically in product-owned code.
 
 ## When to apply
 
-Before accepting an agent-produced fix, feature, refactor, or security recommendation.
+Before accepting an agent-produced fix, feature, refactor, or security
+recommendation. Apply it specifically when the agent prepares structured input
+while technical identifiers, layout, neutral defaults, or the integrity of real
+files can be derived without a semantic guess.
 
 ## How to apply
 
 1. Before execution, define the primary observable result, critical
    invariants, expected artifacts, and negative cases; do not include the
    agent's self-report in the criteria.
-2. Choose the smallest verification ladder from the nearest public boundary to
+2. Draw a boundary between semantics and mechanics. The agent supplies only
+   substantiated semantic decisions; a product-owned normalizer derives safe
+   technical IDs, layout, neutral defaults, and integrity metadata from the
+   actual bytes.
+3. Normalize only absent mechanical fields. Explicitly invalid, unknown, or
+   ambiguous semantics must fail before any write rather than be repaired by a
+   guess.
+4. Pass prompt examples through the same normalizer and validator that process
+   real output, alongside negative cases for invalid types, unknown fields, and
+   ambiguous references.
+5. Choose the smallest verification ladder from the nearest public boundary to
    broader tests, builds, analyzers, and E2E.
-3. Run the checks from a reproducible baseline and retain commands, versions,
+6. Run the checks from a reproducible baseline and retain commands, versions,
    inputs, exit codes, and safe artifact references.
-4. For structured output, separately verify existence, allowed path, schema,
+7. For structured output, separately verify existence, allowed path, schema,
    completeness, and relevance to the task; transport success or exit code zero
    is insufficient.
-5. Run applicable negative and regression cases. Any negative result overrides
+8. Run applicable negative and regression cases. Any negative result overrides
    the agent's narrative and leaves the outcome `FAIL` or `INCONCLUSIVE`.
-6. After an authorized fix, repeat the original check and adjacent invariants
+9. After an authorized fix, repeat the original check and adjacent invariants
    without weakening expectations. If the task was review-only, stop at the
    evidence bundle.
 
@@ -41,14 +56,28 @@ Before accepting an agent-produced fix, feature, refactor, or security recommend
 Checks reproducibly confirm user-visible behavior and no regression. For
 structured output, artifact existence, allowed path, schema, and completeness
 are validated separately; agent narrative cannot override a negative result.
+The same semantic input produces the same normalized artifact, integrity
+matches the actual bytes, prompt examples pass through the same path, and
+invalid, unknown, or ambiguous input is rejected before a write.
 
-## Limitations
+## Alternatives and limitations
 
 A broad green check is insufficient when it does not execute the changed user
 behavior or critical invariant. Exit code zero is also insufficient when a tool
 call was rejected, final JSON is missing, or the expected artifact was not
 created.
 
+Alternatives are to require the agent to emit the complete strict schema or to
+construct it with a deterministic form. The first moves mechanical detail into
+probabilistic output; the second is safer when the semantic options can already
+be enumerated. A normalizer becomes dangerous when it starts inventing meaning:
+defaults must remain neutral and ambiguity must block. The new specialization
+has only static verification from a committed normalizer and its tests; it was
+not replayed independently and is not treated as a separate accepted result.
+Measurement remains qualitative, with no claimed numerical effect.
+
 ## Revisit
 
-Re-evaluate when the agent workflow changes, reproducibility is lost, or a cheaper alternative appears.
+Re-evaluate when the agent workflow, schema, normalizer, or prompt examples
+change; when reproducibility is lost; when ambiguous input is accepted; or when
+a cheaper alternative appears.

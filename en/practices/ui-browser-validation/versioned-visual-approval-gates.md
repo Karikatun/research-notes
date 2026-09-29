@@ -31,20 +31,25 @@ unknown impact is cheaper than a hidden visual regression.
 2. Bind an approved scenario to an actor, route, fixture/state, viewport,
    platform, pinned renderer, specification, and baseline hash. Keep the
    responsible human's decision separate from generated evidence.
-3. Assign every production source a single owning surface and fail closed on an
+3. For degraded success, declare the exact request and failure that must occur,
+   together with the permitted side-effect budget. Verify preserved fallback
+   semantics and accessibility, the expected failure, no undeclared writes,
+   requests, or errors, no horizontal overflow, and a match against the
+   approved screenshots.
+4. Assign every production source a single owning surface and fail closed on an
    unknown input, ambiguous ownership, or a shared source that reaches a blocked
    surface.
-4. Verify the exact staged tree, not an arbitrary working directory. Run the
+5. Verify the exact staged tree, not an arbitrary working directory. Run the
    renderer with pinned configuration, no snapshot-update mode, and no authority
    to declare its own output a product `PASS`.
-5. Accept an oracle, specification, or baseline change only after a separate
+6. Accept an oracle, specification, or baseline change only after a separate
    explicit decision and a new append-only record. A source change under the
    same oracle requires a new render; zero pixel diff does not require renewed
    approval.
-6. Verify behavior, accessibility, and clarity separately with E2E,
+7. Verify behavior, accessibility, and clarity separately with E2E,
    accessibility checks, rendered review, and human acceptance. Pixel match
    confirms only the listed visual contract.
-7. Report the checked revision, affected active and blocked states, comparison
+8. Report the checked revision, affected active and blocked states, comparison
    result, and residual boundaries; do not turn blocked surfaces into a general
    `PASS`.
 
@@ -57,13 +62,19 @@ until a separate decision. The accepted UI result remains linked to a
 reproducible scenario, while unspecified states remain explicitly outside the
 evidence.
 
+For degraded success, the declared failure is additionally reproduced, the
+fallback preserves its stated meaning and accessible name, and the budget for
+undeclared writes, requests, errors, and overflow remains zero.
+
 ## Alternatives and limitations
 
 For a local cosmetic fix, comparable before-and-after screenshots, rendered
 review, and E2E are usually cheaper. An ownership registry, transition history,
 and isolated renderer add substantial maintenance and can block safe changes to
 shared files. The gate does not choose good design, prove usability, or replace
-human approval; without a stable oracle it becomes ritual process.
+human approval; without a stable oracle it becomes ritual process. If the
+fixture does not pin the exact expected failure and side-effect budget, a green
+screenshot can normalize the wrong degradation or hide excess requests.
 
 ## Revisit
 

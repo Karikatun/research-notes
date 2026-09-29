@@ -44,11 +44,18 @@ ownership map fails closed on unknown inputs, ambiguity, or shared-file impact
 on blocked surfaces. A separate visual check materializes the staged tree and
 has no snapshot-update mode.
 
+In a separate failure-injected attempt, the expected failure of an optional
+image request was part of the state rather than test noise. The check required
+a visible fallback with an accessible name, no undeclared writes, requests,
+page errors, or horizontal overflow, and then compared the result with approved
+desktop and mobile baselines.
+
 ## Significant attempt
 
 | Scenario | Role | Alternative | Criterion | Outcome | Effect | Rework or harm | Confidence |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | Evolve several connected UI surfaces after human acceptance | Authority/ownership registry and isolated comparison of the exact staged tree | Manual screenshots, E2E, and ordinary updateable snapshots | An approved source-only diff reproduces the baseline; an oracle change or unknown impact is blocked and cannot accept itself | accepted | Accepted desktop/mobile scenarios gained a durable link between decision, specification, and pixels; unspecified states remained explicitly blocked | Separate ownership transitions, substantial policy machinery, and history maintenance were required; time savings were not measured | high |
+| Degraded success when an optional image is unavailable | Failure-injected fixture and versioned visual contract | Behavioral E2E without an approved screenshot, or manual comparison | The exact request receives the declared failure; the fallback preserves meaning and an accessible name; there are no undeclared writes, requests, page errors, or overflow; the screenshot matches its baseline | accepted | The owning project recorded accepted desktop/mobile degradation states without adding a new placeholder or extending approval to other states | The fixture, specification, and baselines require synchronized maintenance; evidence is limited to the owning project's acceptance record, with no independent replay, deployment, or live verification | medium |
 
 ## Limitations
 
@@ -57,6 +64,9 @@ accessibility, clarity, security, or production state. Completeness depends on a
 correct source-ownership map and Git history; a shared file can block several
 surfaces. The policy and isolated renderer create their own drift and false-stop
 risks.
+
+A failure-injected scenario can also create false confidence when the expected
+failure is underspecified or the side-effect budget does not fail closed.
 
 ## Decision
 

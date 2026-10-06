@@ -23,6 +23,10 @@ recommendation. Apply it specifically when the agent prepares structured input
 while technical identifiers, layout, neutral defaults, or the integrity of real
 files can be derived without a semantic guess.
 
+Another case is removing privacy- or security-sensitive or hidden behavior.
+Deleting an import or call from source does not yet prove that the related UI or
+code is absent from the emitted build.
+
 ## How to apply
 
 1. Before execution, define the primary observable result, critical
@@ -45,9 +49,16 @@ files can be derived without a semantic guess.
 7. For structured output, separately verify existence, allowed path, schema,
    completeness, and relevance to the task; transport success or exit code zero
    is insufficient.
-8. Run applicable negative and regression cases. Any negative result overrides
+8. When removing sensitive or hidden behavior, predeclare the applicable
+   configuration profiles and forbidden UI markers, endpoints, and providers.
+   For every profile, use the build manifest or an equivalent source to obtain
+   the complete set of emitted HTML and JavaScript artifacts, verify that the
+   whole set contains no forbidden match, and preserve a positive critical user
+   path invariant at the same time. If the claim includes no runtime requests,
+   confirm it separately through browser network observation.
+9. Run applicable negative and regression cases. Any negative result overrides
    the agent's narrative and leaves the outcome `FAIL` or `INCONCLUSIVE`.
-9. After an authorized fix, repeat the original check and adjacent invariants
+10. After an authorized fix, repeat the original check and adjacent invariants
    without weakening expectations. If the task was review-only, stop at the
    evidence bundle.
 
@@ -60,6 +71,12 @@ The same semantic input produces the same normalized artifact, integrity
 matches the actual bytes, prompt examples pass through the same path, and
 invalid, unknown, or ambiguous input is rejected before a write.
 
+When sensitive or hidden behavior is removed, every applicable profile has zero
+forbidden markers, endpoints, and providers across the complete emitted HTML and
+JavaScript set, whose coverage is bound to the build manifest or its equivalent,
+while the positive critical user path remains intact. No-runtime-request claims
+are confirmed only with separate browser network observation.
+
 ## Alternatives and limitations
 
 A broad green check is insufficient when it does not execute the changed user
@@ -71,10 +88,19 @@ Alternatives are to require the agent to emit the complete strict schema or to
 construct it with a deterministic form. The first moves mechanical detail into
 probabilistic output; the second is safer when the semantic options can already
 be enumerated. A normalizer becomes dangerous when it starts inventing meaning:
-defaults must remain neutral and ambiguity must block. The new specialization
-has only static verification from a committed normalizer and its tests; it was
-not replayed independently and is not treated as a separate accepted result.
-Measurement remains qualitative, with no claimed numerical effect.
+defaults must remain neutral and ambiguity must block. The normalizer
+specialization has only static verification from a committed normalizer and its
+tests; it was not replayed independently and is not treated as a separate
+accepted result.
+
+String matching in HTML and JavaScript can miss minified, encoded, or
+runtime-assembled behavior and can falsely match an innocuous string. Declare
+profiles and markers before the check, and derive artifact-set completeness from
+the manifest or an equivalent source; otherwise the scan can easily become a
+ritual. The removal specialization is supported only by a statically inspectable
+committed build-output test; it was not replayed independently and is not treated
+as a separate accepted result. Measurement for both specializations remains
+qualitative, with no claimed numerical effect.
 
 ## Revisit
 
